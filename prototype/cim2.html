@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Napkee export</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/datepicker.css">
+	<link rel="stylesheet" href="css/colorpicker.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/smoothness/jquery-ui-1.10.3.custom.min.css">
+	<link rel="stylesheet" href="css/jquery.orgchart.css">
+	<link rel="stylesheet" href="css/jquery.treeview.css">
+	
+	
+	<style type="text/css">
+	#napkeeCanvas {
+		position:absolute;
+		left:0px;
+		top:0px;
+	}
+	.napkeeComponent {
+		position:absolute;
+		white-space: nowrap;
+	}
+	.napkeeRelativeComponent {
+		position:absolute;
+		white-space: nowrap;
+	}
+	
+	
+#nap0{
+	left:38px;
+	top:62px;
+	width:438px;
+	z-index:0;
+	background-color:#FFFFFF;
+	color:#000000;
+	font-size: 14px;
+	font-style:normal;
+	font-weight:normal;
+	text-decoration:none;
+	text-align:left;
+}
+	
+#nap2{
+	left:38px;
+	top:124px;
+	width:438px;
+	height:196px;
+	z-index:1;
+	color:#000000;
+	background-color:#FFFFFF;
+	opacity:1.0;
+	filter:alpha(opacity=100);
+	font-size: 14px;
+	font-style:normal;
+	font-weight:normal;
+	text-decoration:none;
+	text-align:left;
+}
+	
+#nap3{
+	left:38px;
+	top:41px;
+	width:220.00000000000003px;
+	height:21px;
+	z-index:2;
+	font-size: 14px;
+	font-style:normal;
+	font-weight:bold;
+	text-decoration:none;
+	text-align:left;
+	color:#000000;
+}
+	
+#nap4{
+	left:38px;
+	top:103px;
+	width:178.20000000000002px;
+	height:21px;
+	z-index:3;
+	font-size: 14px;
+	font-style:normal;
+	font-weight:bold;
+	text-decoration:none;
+	text-align:left;
+	color:#000000;
+}
+	
+#nap5{
+	left:117px;
+	top:340px;
+	z-index:4;
+}
+
+#nap5.napkee {
+	width:88px;
+	height:27px;
+	font-size: 14px;
+	font-style:normal;
+	font-weight:normal;
+	text-decoration:none;
+}
+
+	
+#nap6{
+	left:38px;
+	top:340px;
+	z-index:5;
+}
+
+#nap6.napkee {
+	width:64px;
+	height:27px;
+	font-size: 14px;
+	font-style:normal;
+	font-weight:normal;
+	text-decoration:none;
+}
+
+	
+	</style>
+	
+	<script src="js/jquery-1.10.2.min.js"></script>
+	<script src="js/jquery-ui-1.10.3.custom.min.js"></script>
+	<script src="js/jquery.migration.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+	<script src="js/bootstrap-datepicker.js"></script>
+    <script src="js/jquery.swfobject.1-0.5.min.js"></script>
+    <script src="js/swfobject.js"></script>
+    <script src="js/jquery.sparkline.min.js"></script>
+    <script src="js/bootstrap-colorpicker.js"></script>
+    <script src="js/jquery.tools.min.js"></script>
+    <script src="js/holder.js"></script>
+    <script src="js/jquery.orgchart.min.js"></script>
+    <script src="js/jquery.treeview.min.js"></script>
+    <script src="js/jquery.tagcloud.min.js"></script>
+	
+  </head>
+  <body>
+  
+	
+
+
+	
+<input id="nap0" type="text" value="" class="napkeeComponent napkeeTextinput" />
+	
+<textarea id="nap2" class="napkeeComponent napkeeTextarea"></textarea>
+	
+<span id="nap3" class="napkeeComponent napkeeLabel ">Enter a name for the new model</span>
+	
+<span id="nap4" class="napkeeComponent napkeeLabel ">Enter a model description</span>
+	
+<button id="nap5" type="button" class="napkeeComponent napkeeButton btn">Continue &gt;</button>
+	
+<button id="nap6" type="button" class="napkeeComponent napkeeButton btn">&lt; Back</button>
+	
+	
+    <script type="text/javascript" charset="utf-8">
+	    function showMockup(url,params){
+			var finalUrl = url + "?";
+			if (params!=null){
+				jQuery.each(params, function(par, field){
+					finalUrl += par + "=" + $("#"+field).val() + "&";
+				});
+			}
+			location.href = finalUrl;
+		}
+		$(document).ready(function(){
+			$(".accordion").each(function(){
+				var _acc = $(this);
+				_acc.find(".accordion-inner").height(_acc.height() - (_acc.find(".accordion-inner").length * 36));
+			});
+			$(document).on("click", function(e){
+				$("[data-date]").datepicker('show');
+			});
+		
+			
+$("#nap0").click(function(event){
+	event.stopPropagation();
+	event.preventDefault();
+});
+	
+$("#nap3").click(function(event){
+	
+	event.stopPropagation();
+	event.preventDefault();
+
+});
+	
+$("#nap4").click(function(event){
+	
+	event.stopPropagation();
+	event.preventDefault();
+
+});
+	
+$("#nap5").click(function(event){
+	showMockup('cim3.html');
+	event.stopPropagation();
+	event.preventDefault();
+
+});
+	
+$("#nap6").click(function(event){
+	showMockup('cim.html');
+	event.stopPropagation();
+	event.preventDefault();
+
+});
+	
+		});
+	</script>
+  </body>
+</html>

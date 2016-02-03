@@ -1,0 +1,2048 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Napkee export</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/datepicker.css">
+	<link rel="stylesheet" href="css/colorpicker.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/smoothness/jquery-ui-1.10.3.custom.min.css">
+	<link rel="stylesheet" href="css/jquery.orgchart.css">
+	<link rel="stylesheet" href="css/jquery.treeview.css">
+	
+	
+	<style type="text/css">
+	#napkeeCanvas {
+		position:absolute;
+		left:0px;
+		top:0px;
+	}
+	.napkeeComponent {
+		position:absolute;
+		white-space: nowrap;
+	}
+	.napkeeRelativeComponent {
+		position:absolute;
+		white-space: nowrap;
+	}
+	
+	
+#nap0{
+	left:40px;
+	top:40px;
+	width:408.1px;
+	height:21px;
+	z-index:0;
+	font-size: 14px;
+	font-style:normal;
+	font-weight:bold;
+	text-decoration:none;
+	text-align:left;
+	color:#000000;
+}
+	
+#nap2{
+	left:80px;
+	top:121px;
+	width:59.400000000000006px;
+	height:21px;
+	z-index:1;
+	font-size: 14px;
+	font-style:normal;
+	font-weight:normal;
+	text-decoration:none;
+	text-align:left;
+	color:#000000;
+}
+	
+#nap4{
+	left:80px;
+	top:157px;
+	width:35.2px;
+	height:21px;
+	z-index:2;
+	font-size: 14px;
+	font-style:normal;
+	font-weight:normal;
+	text-decoration:none;
+	text-align:left;
+	color:#000000;
+}
+	
+#nap5{
+	left:80px;
+	top:193px;
+	width:49.50000000000001px;
+	height:21px;
+	z-index:3;
+	font-size: 14px;
+	font-style:normal;
+	font-weight:normal;
+	text-decoration:none;
+	text-align:left;
+	color:#000000;
+}
+	
+#containernap6{
+	left:255px;
+	top:120px;
+	width:20px;
+	height:21px;
+	z-index:4;
+	font-size: 14px;
+	font-style:normal;
+	font-weight:normal;
+	text-decoration:none;
+}
+	
+#containernap7{
+	left:255px;
+	top:156px;
+	width:20px;
+	height:21px;
+	z-index:5;
+	font-size: 14px;
+	font-style:normal;
+	font-weight:normal;
+	text-decoration:none;
+}
+	
+#containernap8{
+	left:255px;
+	top:192px;
+	width:20px;
+	height:21px;
+	z-index:6;
+	font-size: 14px;
+	font-style:normal;
+	font-weight:normal;
+	text-decoration:none;
+}
+	
+#nap9{
+	left:80px;
+	top:229px;
+	width:48.400000000000006px;
+	height:21px;
+	z-index:7;
+	font-size: 14px;
+	font-style:normal;
+	font-weight:normal;
+	text-decoration:none;
+	text-align:left;
+	color:#000000;
+}
+	
+#nap10{
+	left:80px;
+	top:265px;
+	width:42.900000000000006px;
+	height:21px;
+	z-index:8;
+	font-size: 14px;
+	font-style:normal;
+	font-weight:normal;
+	text-decoration:none;
+	text-align:left;
+	color:#000000;
+}
+	
+#nap11{
+	left:80px;
+	top:301px;
+	width:46.2px;
+	height:21px;
+	z-index:9;
+	font-size: 14px;
+	font-style:normal;
+	font-weight:normal;
+	text-decoration:none;
+	text-align:left;
+	color:#000000;
+}
+	
+#nap12{
+	left:80px;
+	top:337px;
+	width:150.70000000000002px;
+	height:21px;
+	z-index:10;
+	font-size: 14px;
+	font-style:normal;
+	font-weight:normal;
+	text-decoration:none;
+	text-align:left;
+	color:#000000;
+}
+	
+#nap13{
+	left:80px;
+	top:373px;
+	width:41.800000000000004px;
+	height:21px;
+	z-index:11;
+	font-size: 14px;
+	font-style:normal;
+	font-weight:normal;
+	text-decoration:none;
+	text-align:left;
+	color:#000000;
+}
+	
+#nap14{
+	left:80px;
+	top:409px;
+	width:86.9px;
+	height:21px;
+	z-index:12;
+	font-size: 14px;
+	font-style:normal;
+	font-weight:normal;
+	text-decoration:none;
+	text-align:left;
+	color:#000000;
+}
+	
+#nap15{
+	left:80px;
+	top:445px;
+	width:108.9px;
+	height:21px;
+	z-index:13;
+	font-size: 14px;
+	font-style:normal;
+	font-weight:normal;
+	text-decoration:none;
+	text-align:left;
+	color:#000000;
+}
+	
+#nap16{
+	left:80px;
+	top:481px;
+	width:66px;
+	height:21px;
+	z-index:14;
+	font-size: 14px;
+	font-style:normal;
+	font-weight:normal;
+	text-decoration:none;
+	text-align:left;
+	color:#000000;
+}
+	
+#nap17{
+	left:80px;
+	top:517px;
+	width:63.800000000000004px;
+	height:21px;
+	z-index:15;
+	font-size: 14px;
+	font-style:normal;
+	font-weight:normal;
+	text-decoration:none;
+	text-align:left;
+	color:#000000;
+}
+	
+#nap18{
+	left:80px;
+	top:553px;
+	width:70.4px;
+	height:21px;
+	z-index:16;
+	font-size: 14px;
+	font-style:normal;
+	font-weight:normal;
+	text-decoration:none;
+	text-align:left;
+	color:#000000;
+}
+	
+#nap19{
+	left:80px;
+	top:589px;
+	width:62.7px;
+	height:21px;
+	z-index:17;
+	font-size: 14px;
+	font-style:normal;
+	font-weight:normal;
+	text-decoration:none;
+	text-align:left;
+	color:#000000;
+}
+	
+#nap20{
+	left:80px;
+	top:625px;
+	width:66px;
+	height:21px;
+	z-index:18;
+	font-size: 14px;
+	font-style:normal;
+	font-weight:normal;
+	text-decoration:none;
+	text-align:left;
+	color:#000000;
+}
+	
+#containernap21{
+	left:255px;
+	top:228px;
+	width:20px;
+	height:21px;
+	z-index:19;
+	font-size: 14px;
+	font-style:normal;
+	font-weight:normal;
+	text-decoration:none;
+}
+	
+#containernap22{
+	left:255px;
+	top:264px;
+	width:20px;
+	height:21px;
+	z-index:20;
+	font-size: 14px;
+	font-style:normal;
+	font-weight:normal;
+	text-decoration:none;
+}
+	
+#containernap23{
+	left:255px;
+	top:300px;
+	width:20px;
+	height:21px;
+	z-index:21;
+	font-size: 14px;
+	font-style:normal;
+	font-weight:normal;
+	text-decoration:none;
+}
+	
+#containernap24{
+	left:255px;
+	top:336px;
+	width:20px;
+	height:21px;
+	z-index:22;
+	font-size: 14px;
+	font-style:normal;
+	font-weight:normal;
+	text-decoration:none;
+}
+	
+#containernap25{
+	left:255px;
+	top:372px;
+	width:20px;
+	height:21px;
+	z-index:23;
+	font-size: 14px;
+	font-style:normal;
+	font-weight:normal;
+	text-decoration:none;
+}
+	
+#containernap26{
+	left:255px;
+	top:408px;
+	width:20px;
+	height:21px;
+	z-index:24;
+	font-size: 14px;
+	font-style:normal;
+	font-weight:normal;
+	text-decoration:none;
+}
+	
+#containernap27{
+	left:255px;
+	top:444px;
+	width:20px;
+	height:21px;
+	z-index:25;
+	font-size: 14px;
+	font-style:normal;
+	font-weight:normal;
+	text-decoration:none;
+}
+	
+#containernap28{
+	left:255px;
+	top:480px;
+	width:20px;
+	height:21px;
+	z-index:26;
+	font-size: 14px;
+	font-style:normal;
+	font-weight:normal;
+	text-decoration:none;
+}
+	
+#containernap29{
+	left:255px;
+	top:516px;
+	width:20px;
+	height:21px;
+	z-index:27;
+	font-size: 14px;
+	font-style:normal;
+	font-weight:normal;
+	text-decoration:none;
+}
+	
+#containernap30{
+	left:255px;
+	top:552px;
+	width:20px;
+	height:21px;
+	z-index:28;
+	font-size: 14px;
+	font-style:normal;
+	font-weight:normal;
+	text-decoration:none;
+}
+	
+#containernap31{
+	left:255px;
+	top:588px;
+	width:20px;
+	height:21px;
+	z-index:29;
+	font-size: 14px;
+	font-style:normal;
+	font-weight:normal;
+	text-decoration:none;
+}
+	
+#containernap32{
+	left:255px;
+	top:624px;
+	width:20px;
+	height:21px;
+	z-index:30;
+	font-size: 14px;
+	font-style:normal;
+	font-weight:normal;
+	text-decoration:none;
+}
+	
+#nap33{
+	left:349px;
+	top:121px;
+	width:50px;
+	z-index:31;
+	font-size: 14px;
+	font-style:normal;
+	font-weight:normal;
+	text-decoration:none;
+}
+	
+#nap34{
+	left:80px;
+	top:76px;
+	width:57.2px;
+	height:21px;
+	z-index:32;
+	font-size: 14px;
+	font-style:normal;
+	font-weight:bold;
+	text-decoration:none;
+	text-align:left;
+	color:#000000;
+}
+	
+#nap35{
+	left:232px;
+	top:76px;
+	width:92.4px;
+	height:21px;
+	z-index:33;
+	font-size: 14px;
+	font-style:normal;
+	font-weight:bold;
+	text-decoration:none;
+	text-align:left;
+	color:#000000;
+}
+	
+#nap36{
+	left:342px;
+	top:76px;
+	width:73.7px;
+	height:21px;
+	z-index:34;
+	font-size: 14px;
+	font-style:normal;
+	font-weight:bold;
+	text-decoration:none;
+	text-align:left;
+	color:#000000;
+}
+	
+#nap39{
+	left:584px;
+	top:118px;
+	z-index:35;
+}
+
+#nap39.napkee {
+	width:163px;
+	height:27px;
+	font-size: 14px;
+	font-style:normal;
+	font-weight:normal;
+	text-decoration:none;
+}
+
+	
+#nap42{
+	left:80px;
+	top:661px;
+	z-index:36;
+}
+
+#nap42.napkee {
+	width:136px;
+	height:27px;
+	font-size: 14px;
+	font-style:normal;
+	font-weight:normal;
+	text-decoration:none;
+}
+
+	
+#nap43{
+	left:119px;
+	top:725px;
+	z-index:37;
+}
+
+#nap43.napkee {
+	width:88px;
+	height:27px;
+	font-size: 14px;
+	font-style:normal;
+	font-weight:normal;
+	text-decoration:none;
+}
+
+	
+#nap44{
+	left:40px;
+	top:725px;
+	z-index:38;
+}
+
+#nap44.napkee {
+	width:64px;
+	height:27px;
+	font-size: 14px;
+	font-style:normal;
+	font-weight:normal;
+	text-decoration:none;
+}
+
+	
+#nap59{
+	left:349px;
+	top:157px;
+	width:50px;
+	z-index:39;
+	font-size: 14px;
+	font-style:normal;
+	font-weight:normal;
+	text-decoration:none;
+}
+	
+#nap60{
+	left:349px;
+	top:193px;
+	width:50px;
+	z-index:40;
+	font-size: 14px;
+	font-style:normal;
+	font-weight:normal;
+	text-decoration:none;
+}
+	
+#nap61{
+	left:349px;
+	top:229px;
+	width:50px;
+	z-index:41;
+	font-size: 14px;
+	font-style:normal;
+	font-weight:normal;
+	text-decoration:none;
+}
+	
+#nap62{
+	left:349px;
+	top:265px;
+	width:50px;
+	z-index:42;
+	font-size: 14px;
+	font-style:normal;
+	font-weight:normal;
+	text-decoration:none;
+}
+	
+#nap63{
+	left:349px;
+	top:301px;
+	width:50px;
+	z-index:43;
+	font-size: 14px;
+	font-style:normal;
+	font-weight:normal;
+	text-decoration:none;
+}
+	
+#nap64{
+	left:349px;
+	top:337px;
+	width:50px;
+	z-index:44;
+	font-size: 14px;
+	font-style:normal;
+	font-weight:normal;
+	text-decoration:none;
+}
+	
+#nap65{
+	left:349px;
+	top:373px;
+	width:50px;
+	z-index:45;
+	font-size: 14px;
+	font-style:normal;
+	font-weight:normal;
+	text-decoration:none;
+}
+	
+#nap66{
+	left:349px;
+	top:409px;
+	width:50px;
+	z-index:46;
+	font-size: 14px;
+	font-style:normal;
+	font-weight:normal;
+	text-decoration:none;
+}
+	
+#nap67{
+	left:349px;
+	top:445px;
+	width:50px;
+	z-index:47;
+	font-size: 14px;
+	font-style:normal;
+	font-weight:normal;
+	text-decoration:none;
+}
+	
+#nap68{
+	left:349px;
+	top:481px;
+	width:50px;
+	z-index:48;
+	font-size: 14px;
+	font-style:normal;
+	font-weight:normal;
+	text-decoration:none;
+}
+	
+#nap69{
+	left:349px;
+	top:517px;
+	width:50px;
+	z-index:49;
+	font-size: 14px;
+	font-style:normal;
+	font-weight:normal;
+	text-decoration:none;
+}
+	
+#nap70{
+	left:349px;
+	top:553px;
+	width:50px;
+	z-index:50;
+	font-size: 14px;
+	font-style:normal;
+	font-weight:normal;
+	text-decoration:none;
+}
+	
+#nap71{
+	left:349px;
+	top:589px;
+	width:50px;
+	z-index:51;
+	font-size: 14px;
+	font-style:normal;
+	font-weight:normal;
+	text-decoration:none;
+}
+	
+#nap72{
+	left:349px;
+	top:625px;
+	width:50px;
+	z-index:52;
+	font-size: 14px;
+	font-style:normal;
+	font-weight:normal;
+	text-decoration:none;
+}
+	
+#nap89{
+	left:448px;
+	top:118px;
+	z-index:53;
+}
+
+#nap89.napkee {
+	width:121px;
+	height:27px;
+	font-size: 14px;
+	font-style:normal;
+	font-weight:normal;
+	text-decoration:none;
+}
+
+	
+#nap90{
+	left:584px;
+	top:154px;
+	z-index:54;
+}
+
+#nap90.napkee {
+	width:163px;
+	height:27px;
+	font-size: 14px;
+	font-style:normal;
+	font-weight:normal;
+	text-decoration:none;
+}
+
+	
+#nap91{
+	left:448px;
+	top:154px;
+	z-index:55;
+}
+
+#nap91.napkee {
+	width:121px;
+	height:27px;
+	font-size: 14px;
+	font-style:normal;
+	font-weight:normal;
+	text-decoration:none;
+}
+
+	
+#nap92{
+	left:584px;
+	top:190px;
+	z-index:56;
+}
+
+#nap92.napkee {
+	width:163px;
+	height:27px;
+	font-size: 14px;
+	font-style:normal;
+	font-weight:normal;
+	text-decoration:none;
+}
+
+	
+#nap93{
+	left:448px;
+	top:190px;
+	z-index:57;
+}
+
+#nap93.napkee {
+	width:121px;
+	height:27px;
+	font-size: 14px;
+	font-style:normal;
+	font-weight:normal;
+	text-decoration:none;
+}
+
+	
+#nap94{
+	left:584px;
+	top:226px;
+	z-index:58;
+}
+
+#nap94.napkee {
+	width:163px;
+	height:27px;
+	font-size: 14px;
+	font-style:normal;
+	font-weight:normal;
+	text-decoration:none;
+}
+
+	
+#nap95{
+	left:448px;
+	top:226px;
+	z-index:59;
+}
+
+#nap95.napkee {
+	width:121px;
+	height:27px;
+	font-size: 14px;
+	font-style:normal;
+	font-weight:normal;
+	text-decoration:none;
+}
+
+	
+#nap96{
+	left:584px;
+	top:262px;
+	z-index:60;
+}
+
+#nap96.napkee {
+	width:163px;
+	height:27px;
+	font-size: 14px;
+	font-style:normal;
+	font-weight:normal;
+	text-decoration:none;
+}
+
+	
+#nap97{
+	left:448px;
+	top:262px;
+	z-index:61;
+}
+
+#nap97.napkee {
+	width:121px;
+	height:27px;
+	font-size: 14px;
+	font-style:normal;
+	font-weight:normal;
+	text-decoration:none;
+}
+
+	
+#nap98{
+	left:584px;
+	top:298px;
+	z-index:62;
+}
+
+#nap98.napkee {
+	width:163px;
+	height:27px;
+	font-size: 14px;
+	font-style:normal;
+	font-weight:normal;
+	text-decoration:none;
+}
+
+	
+#nap99{
+	left:448px;
+	top:298px;
+	z-index:63;
+}
+
+#nap99.napkee {
+	width:121px;
+	height:27px;
+	font-size: 14px;
+	font-style:normal;
+	font-weight:normal;
+	text-decoration:none;
+}
+
+	
+#nap100{
+	left:584px;
+	top:334px;
+	z-index:64;
+}
+
+#nap100.napkee {
+	width:163px;
+	height:27px;
+	font-size: 14px;
+	font-style:normal;
+	font-weight:normal;
+	text-decoration:none;
+}
+
+	
+#nap101{
+	left:448px;
+	top:334px;
+	z-index:65;
+}
+
+#nap101.napkee {
+	width:121px;
+	height:27px;
+	font-size: 14px;
+	font-style:normal;
+	font-weight:normal;
+	text-decoration:none;
+}
+
+	
+#nap102{
+	left:584px;
+	top:370px;
+	z-index:66;
+}
+
+#nap102.napkee {
+	width:163px;
+	height:27px;
+	font-size: 14px;
+	font-style:normal;
+	font-weight:normal;
+	text-decoration:none;
+}
+
+	
+#nap103{
+	left:448px;
+	top:370px;
+	z-index:67;
+}
+
+#nap103.napkee {
+	width:121px;
+	height:27px;
+	font-size: 14px;
+	font-style:normal;
+	font-weight:normal;
+	text-decoration:none;
+}
+
+	
+#nap104{
+	left:584px;
+	top:406px;
+	z-index:68;
+}
+
+#nap104.napkee {
+	width:163px;
+	height:27px;
+	font-size: 14px;
+	font-style:normal;
+	font-weight:normal;
+	text-decoration:none;
+}
+
+	
+#nap105{
+	left:448px;
+	top:406px;
+	z-index:69;
+}
+
+#nap105.napkee {
+	width:121px;
+	height:27px;
+	font-size: 14px;
+	font-style:normal;
+	font-weight:normal;
+	text-decoration:none;
+}
+
+	
+#nap106{
+	left:584px;
+	top:442px;
+	z-index:70;
+}
+
+#nap106.napkee {
+	width:163px;
+	height:27px;
+	font-size: 14px;
+	font-style:normal;
+	font-weight:normal;
+	text-decoration:none;
+}
+
+	
+#nap107{
+	left:448px;
+	top:442px;
+	z-index:71;
+}
+
+#nap107.napkee {
+	width:121px;
+	height:27px;
+	font-size: 14px;
+	font-style:normal;
+	font-weight:normal;
+	text-decoration:none;
+}
+
+	
+#nap108{
+	left:584px;
+	top:478px;
+	z-index:72;
+}
+
+#nap108.napkee {
+	width:163px;
+	height:27px;
+	font-size: 14px;
+	font-style:normal;
+	font-weight:normal;
+	text-decoration:none;
+}
+
+	
+#nap109{
+	left:448px;
+	top:478px;
+	z-index:73;
+}
+
+#nap109.napkee {
+	width:121px;
+	height:27px;
+	font-size: 14px;
+	font-style:normal;
+	font-weight:normal;
+	text-decoration:none;
+}
+
+	
+#nap110{
+	left:584px;
+	top:514px;
+	z-index:74;
+}
+
+#nap110.napkee {
+	width:163px;
+	height:27px;
+	font-size: 14px;
+	font-style:normal;
+	font-weight:normal;
+	text-decoration:none;
+}
+
+	
+#nap111{
+	left:448px;
+	top:514px;
+	z-index:75;
+}
+
+#nap111.napkee {
+	width:121px;
+	height:27px;
+	font-size: 14px;
+	font-style:normal;
+	font-weight:normal;
+	text-decoration:none;
+}
+
+	
+#nap112{
+	left:584px;
+	top:550px;
+	z-index:76;
+}
+
+#nap112.napkee {
+	width:163px;
+	height:27px;
+	font-size: 14px;
+	font-style:normal;
+	font-weight:normal;
+	text-decoration:none;
+}
+
+	
+#nap113{
+	left:448px;
+	top:550px;
+	z-index:77;
+}
+
+#nap113.napkee {
+	width:121px;
+	height:27px;
+	font-size: 14px;
+	font-style:normal;
+	font-weight:normal;
+	text-decoration:none;
+}
+
+	
+#nap114{
+	left:584px;
+	top:586px;
+	z-index:78;
+}
+
+#nap114.napkee {
+	width:163px;
+	height:27px;
+	font-size: 14px;
+	font-style:normal;
+	font-weight:normal;
+	text-decoration:none;
+}
+
+	
+#nap115{
+	left:448px;
+	top:586px;
+	z-index:79;
+}
+
+#nap115.napkee {
+	width:121px;
+	height:27px;
+	font-size: 14px;
+	font-style:normal;
+	font-weight:normal;
+	text-decoration:none;
+}
+
+	
+#nap116{
+	left:584px;
+	top:622px;
+	z-index:80;
+}
+
+#nap116.napkee {
+	width:163px;
+	height:27px;
+	font-size: 14px;
+	font-style:normal;
+	font-weight:normal;
+	text-decoration:none;
+}
+
+	
+#nap117{
+	left:448px;
+	top:622px;
+	z-index:81;
+}
+
+#nap117.napkee {
+	width:121px;
+	height:27px;
+	font-size: 14px;
+	font-style:normal;
+	font-weight:normal;
+	text-decoration:none;
+}
+
+	
+	</style>
+	
+	<script src="js/jquery-1.10.2.min.js"></script>
+	<script src="js/jquery-ui-1.10.3.custom.min.js"></script>
+	<script src="js/jquery.migration.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+	<script src="js/bootstrap-datepicker.js"></script>
+    <script src="js/jquery.swfobject.1-0.5.min.js"></script>
+    <script src="js/swfobject.js"></script>
+    <script src="js/jquery.sparkline.min.js"></script>
+    <script src="js/bootstrap-colorpicker.js"></script>
+    <script src="js/jquery.tools.min.js"></script>
+    <script src="js/holder.js"></script>
+    <script src="js/jquery.orgchart.min.js"></script>
+    <script src="js/jquery.treeview.min.js"></script>
+    <script src="js/jquery.tagcloud.min.js"></script>
+	
+  </head>
+  <body>
+  
+	
+
+
+	
+<span id="nap0" class="napkeeComponent napkeeLabel ">Add constraints to model elements according to your needs</span>
+	
+<span id="nap2" class="napkeeComponent napkeeLabel ">Identifier</span>
+	
+<span id="nap4" class="napkeeComponent napkeeLabel ">Code</span>
+	
+<span id="nap5" class="napkeeComponent napkeeLabel ">Reason</span>
+	
+<span id="containernap6" class="napkeeComponent napkeeCheckbox">
+	<label for="nap6" class="checkbox">
+	<input id="nap6" type="checkbox" />
+	</label>
+</span>
+	
+<span id="containernap7" class="napkeeComponent napkeeCheckbox">
+	<label for="nap7" class="checkbox">
+	<input id="nap7" type="checkbox" />
+	</label>
+</span>
+	
+<span id="containernap8" class="napkeeComponent napkeeCheckbox">
+	<label for="nap8" class="checkbox">
+	<input id="nap8" type="checkbox" />
+	</label>
+</span>
+	
+<span id="nap9" class="napkeeComponent napkeeLabel ">Method</span>
+	
+<span id="nap10" class="napkeeComponent napkeeLabel ">Status</span>
+	
+<span id="nap11" class="napkeeComponent napkeeLabel ">Priority</span>
+	
+<span id="nap12" class="napkeeComponent napkeeLabel ">Interpretation category</span>
+	
+<span id="nap13" class="napkeeComponent napkeeLabel ">Result</span>
+	
+<span id="nap14" class="napkeeComponent napkeeLabel ">Normal range</span>
+	
+<span id="nap15" class="napkeeComponent napkeeLabel ">Reference range</span>
+	
+<span id="nap16" class="napkeeComponent napkeeLabel ">Sequence</span>
+	
+<span id="nap17" class="napkeeComponent napkeeLabel ">Delta flag</span>
+	
+<span id="nap18" class="napkeeComponent napkeeLabel ">Signal flag</span>
+	
+<span id="nap19" class="napkeeComponent napkeeLabel ">Comment</span>
+	
+<span id="nap20" class="napkeeComponent napkeeLabel ">Action set</span>
+	
+<span id="containernap21" class="napkeeComponent napkeeCheckbox">
+	<label for="nap21" class="checkbox">
+	<input id="nap21" type="checkbox" />
+	</label>
+</span>
+	
+<span id="containernap22" class="napkeeComponent napkeeCheckbox">
+	<label for="nap22" class="checkbox">
+	<input id="nap22" type="checkbox" />
+	</label>
+</span>
+	
+<span id="containernap23" class="napkeeComponent napkeeCheckbox">
+	<label for="nap23" class="checkbox">
+	<input id="nap23" type="checkbox" />
+	</label>
+</span>
+	
+<span id="containernap24" class="napkeeComponent napkeeCheckbox">
+	<label for="nap24" class="checkbox">
+	<input id="nap24" type="checkbox" />
+	</label>
+</span>
+	
+<span id="containernap25" class="napkeeComponent napkeeCheckbox">
+	<label for="nap25" class="checkbox">
+	<input id="nap25" type="checkbox" />
+	</label>
+</span>
+	
+<span id="containernap26" class="napkeeComponent napkeeCheckbox">
+	<label for="nap26" class="checkbox">
+	<input id="nap26" type="checkbox" />
+	</label>
+</span>
+	
+<span id="containernap27" class="napkeeComponent napkeeCheckbox">
+	<label for="nap27" class="checkbox">
+	<input id="nap27" type="checkbox" />
+	</label>
+</span>
+	
+<span id="containernap28" class="napkeeComponent napkeeCheckbox">
+	<label for="nap28" class="checkbox">
+	<input id="nap28" type="checkbox" />
+	</label>
+</span>
+	
+<span id="containernap29" class="napkeeComponent napkeeCheckbox">
+	<label for="nap29" class="checkbox">
+	<input id="nap29" type="checkbox" />
+	</label>
+</span>
+	
+<span id="containernap30" class="napkeeComponent napkeeCheckbox">
+	<label for="nap30" class="checkbox">
+	<input id="nap30" type="checkbox" />
+	</label>
+</span>
+	
+<span id="containernap31" class="napkeeComponent napkeeCheckbox">
+	<label for="nap31" class="checkbox">
+	<input id="nap31" type="checkbox" />
+	</label>
+</span>
+	
+<span id="containernap32" class="napkeeComponent napkeeCheckbox">
+	<label for="nap32" class="checkbox">
+	<input id="nap32" type="checkbox" />
+	</label>
+</span>
+	
+<select id="nap33" class="napkeeComponent napkeeCombobox">
+<option></option><option>0..*</option><option>0..1</option><option>1</option>
+</select>
+	
+<span id="nap34" class="napkeeComponent napkeeLabel ">Element</span>
+	
+<span id="nap35" class="napkeeComponent napkeeLabel ">Constrain out</span>
+	
+<span id="nap36" class="napkeeComponent napkeeLabel ">Cardinality</span>
+	
+<button id="nap39" type="button" class="napkeeComponent napkeeButton btn">Add terminology binding</button>
+	
+<button id="nap42" type="button" class="napkeeComponent napkeeButton btn">+ Add new element</button>
+	
+<button id="nap43" type="button" class="napkeeComponent napkeeButton btn">Continue &gt;</button>
+	
+<button id="nap44" type="button" class="napkeeComponent napkeeButton btn">&lt; Back</button>
+	
+<select id="nap59" class="napkeeComponent napkeeCombobox">
+<option></option><option>0..*</option><option>0..1</option><option>1</option>
+</select>
+	
+<select id="nap60" class="napkeeComponent napkeeCombobox">
+<option></option><option>0..*</option><option>0..1</option><option>1</option>
+</select>
+	
+<select id="nap61" class="napkeeComponent napkeeCombobox">
+<option></option><option>0..*</option><option>0..1</option><option>1</option>
+</select>
+	
+<select id="nap62" class="napkeeComponent napkeeCombobox">
+<option></option><option>0..*</option><option>0..1</option><option>1</option>
+</select>
+	
+<select id="nap63" class="napkeeComponent napkeeCombobox">
+<option></option><option>0..*</option><option>0..1</option><option>1</option>
+</select>
+	
+<select id="nap64" class="napkeeComponent napkeeCombobox">
+<option></option><option>0..*</option><option>0..1</option><option>1</option>
+</select>
+	
+<select id="nap65" class="napkeeComponent napkeeCombobox">
+<option></option><option>0..*</option><option>0..1</option><option>1</option>
+</select>
+	
+<select id="nap66" class="napkeeComponent napkeeCombobox">
+<option></option><option>0..*</option><option>0..1</option><option>1</option>
+</select>
+	
+<select id="nap67" class="napkeeComponent napkeeCombobox">
+<option></option><option>0..*</option><option>0..1</option><option>1</option>
+</select>
+	
+<select id="nap68" class="napkeeComponent napkeeCombobox">
+<option></option><option>0..*</option><option>0..1</option><option>1</option>
+</select>
+	
+<select id="nap69" class="napkeeComponent napkeeCombobox">
+<option></option><option>0..*</option><option>0..1</option><option>1</option>
+</select>
+	
+<select id="nap70" class="napkeeComponent napkeeCombobox">
+<option></option><option>0..*</option><option>0..1</option><option>1</option>
+</select>
+	
+<select id="nap71" class="napkeeComponent napkeeCombobox">
+<option></option><option>0..*</option><option>0..1</option><option>1</option>
+</select>
+	
+<select id="nap72" class="napkeeComponent napkeeCombobox">
+<option></option><option>0..*</option><option>0..1</option><option>1</option>
+</select>
+	
+<button id="nap89" type="button" class="napkeeComponent napkeeButton btn">Constrain values</button>
+	
+<button id="nap90" type="button" class="napkeeComponent napkeeButton btn">Add terminology binding</button>
+	
+<button id="nap91" type="button" class="napkeeComponent napkeeButton btn">Constrain values</button>
+	
+<button id="nap92" type="button" class="napkeeComponent napkeeButton btn">Add terminology binding</button>
+	
+<button id="nap93" type="button" class="napkeeComponent napkeeButton btn">Constrain values</button>
+	
+<button id="nap94" type="button" class="napkeeComponent napkeeButton btn">Add terminology binding</button>
+	
+<button id="nap95" type="button" class="napkeeComponent napkeeButton btn">Constrain values</button>
+	
+<button id="nap96" type="button" class="napkeeComponent napkeeButton btn">Add terminology binding</button>
+	
+<button id="nap97" type="button" class="napkeeComponent napkeeButton btn">Constrain values</button>
+	
+<button id="nap98" type="button" class="napkeeComponent napkeeButton btn">Add terminology binding</button>
+	
+<button id="nap99" type="button" class="napkeeComponent napkeeButton btn">Constrain values</button>
+	
+<button id="nap100" type="button" class="napkeeComponent napkeeButton btn">Add terminology binding</button>
+	
+<button id="nap101" type="button" class="napkeeComponent napkeeButton btn">Constrain values</button>
+	
+<button id="nap102" type="button" class="napkeeComponent napkeeButton btn">Add terminology binding</button>
+	
+<button id="nap103" type="button" class="napkeeComponent napkeeButton btn">Constrain values</button>
+	
+<button id="nap104" type="button" class="napkeeComponent napkeeButton btn">Add terminology binding</button>
+	
+<button id="nap105" type="button" class="napkeeComponent napkeeButton btn">Constrain values</button>
+	
+<button id="nap106" type="button" class="napkeeComponent napkeeButton btn">Add terminology binding</button>
+	
+<button id="nap107" type="button" class="napkeeComponent napkeeButton btn">Constrain values</button>
+	
+<button id="nap108" type="button" class="napkeeComponent napkeeButton btn">Add terminology binding</button>
+	
+<button id="nap109" type="button" class="napkeeComponent napkeeButton btn">Constrain values</button>
+	
+<button id="nap110" type="button" class="napkeeComponent napkeeButton btn">Add terminology binding</button>
+	
+<button id="nap111" type="button" class="napkeeComponent napkeeButton btn">Constrain values</button>
+	
+<button id="nap112" type="button" class="napkeeComponent napkeeButton btn">Add terminology binding</button>
+	
+<button id="nap113" type="button" class="napkeeComponent napkeeButton btn">Constrain values</button>
+	
+<button id="nap114" type="button" class="napkeeComponent napkeeButton btn">Add terminology binding</button>
+	
+<button id="nap115" type="button" class="napkeeComponent napkeeButton btn">Constrain values</button>
+	
+<button id="nap116" type="button" class="napkeeComponent napkeeButton btn">Add terminology binding</button>
+	
+<button id="nap117" type="button" class="napkeeComponent napkeeButton btn">Constrain values</button>
+	
+	
+    <script type="text/javascript" charset="utf-8">
+	    function showMockup(url,params){
+			var finalUrl = url + "?";
+			if (params!=null){
+				jQuery.each(params, function(par, field){
+					finalUrl += par + "=" + $("#"+field).val() + "&";
+				});
+			}
+			location.href = finalUrl;
+		}
+		$(document).ready(function(){
+			$(".accordion").each(function(){
+				var _acc = $(this);
+				_acc.find(".accordion-inner").height(_acc.height() - (_acc.find(".accordion-inner").length * 36));
+			});
+			$(document).on("click", function(e){
+				$("[data-date]").datepicker('show');
+			});
+		
+			
+$("#nap0").click(function(event){
+	
+	event.stopPropagation();
+	event.preventDefault();
+
+});
+	
+$("#nap2").click(function(event){
+	
+	event.stopPropagation();
+	event.preventDefault();
+
+});
+	
+$("#nap4").click(function(event){
+	
+	event.stopPropagation();
+	event.preventDefault();
+
+});
+	
+$("#nap5").click(function(event){
+	
+	event.stopPropagation();
+	event.preventDefault();
+
+});
+	
+$("#containernap6").click(function(event){
+	
+	event.stopPropagation();
+	event.preventDefault();
+
+});
+	
+$("#containernap7").click(function(event){
+	
+	event.stopPropagation();
+	event.preventDefault();
+
+});
+	
+$("#containernap8").click(function(event){
+	
+	event.stopPropagation();
+	event.preventDefault();
+
+});
+	
+$("#nap9").click(function(event){
+	
+	event.stopPropagation();
+	event.preventDefault();
+
+});
+	
+$("#nap10").click(function(event){
+	
+	event.stopPropagation();
+	event.preventDefault();
+
+});
+	
+$("#nap11").click(function(event){
+	
+	event.stopPropagation();
+	event.preventDefault();
+
+});
+	
+$("#nap12").click(function(event){
+	
+	event.stopPropagation();
+	event.preventDefault();
+
+});
+	
+$("#nap13").click(function(event){
+	
+	event.stopPropagation();
+	event.preventDefault();
+
+});
+	
+$("#nap14").click(function(event){
+	
+	event.stopPropagation();
+	event.preventDefault();
+
+});
+	
+$("#nap15").click(function(event){
+	
+	event.stopPropagation();
+	event.preventDefault();
+
+});
+	
+$("#nap16").click(function(event){
+	
+	event.stopPropagation();
+	event.preventDefault();
+
+});
+	
+$("#nap17").click(function(event){
+	
+	event.stopPropagation();
+	event.preventDefault();
+
+});
+	
+$("#nap18").click(function(event){
+	
+	event.stopPropagation();
+	event.preventDefault();
+
+});
+	
+$("#nap19").click(function(event){
+	
+	event.stopPropagation();
+	event.preventDefault();
+
+});
+	
+$("#nap20").click(function(event){
+	
+	event.stopPropagation();
+	event.preventDefault();
+
+});
+	
+$("#containernap21").click(function(event){
+	
+	event.stopPropagation();
+	event.preventDefault();
+
+});
+	
+$("#containernap22").click(function(event){
+	
+	event.stopPropagation();
+	event.preventDefault();
+
+});
+	
+$("#containernap23").click(function(event){
+	
+	event.stopPropagation();
+	event.preventDefault();
+
+});
+	
+$("#containernap24").click(function(event){
+	
+	event.stopPropagation();
+	event.preventDefault();
+
+});
+	
+$("#containernap25").click(function(event){
+	
+	event.stopPropagation();
+	event.preventDefault();
+
+});
+	
+$("#containernap26").click(function(event){
+	
+	event.stopPropagation();
+	event.preventDefault();
+
+});
+	
+$("#containernap27").click(function(event){
+	
+	event.stopPropagation();
+	event.preventDefault();
+
+});
+	
+$("#containernap28").click(function(event){
+	
+	event.stopPropagation();
+	event.preventDefault();
+
+});
+	
+$("#containernap29").click(function(event){
+	
+	event.stopPropagation();
+	event.preventDefault();
+
+});
+	
+$("#containernap30").click(function(event){
+	
+	event.stopPropagation();
+	event.preventDefault();
+
+});
+	
+$("#containernap31").click(function(event){
+	
+	event.stopPropagation();
+	event.preventDefault();
+
+});
+	
+$("#containernap32").click(function(event){
+	
+	event.stopPropagation();
+	event.preventDefault();
+
+});
+	
+$("#nap33").click(function(event){
+	
+	event.stopPropagation();
+	event.preventDefault();
+
+});
+	
+$("#nap34").click(function(event){
+	
+	event.stopPropagation();
+	event.preventDefault();
+
+});
+	
+$("#nap35").click(function(event){
+	
+	event.stopPropagation();
+	event.preventDefault();
+
+});
+	
+$("#nap36").click(function(event){
+	
+	event.stopPropagation();
+	event.preventDefault();
+
+});
+	
+$("#nap39").click(function(event){
+	showMockup('cim4.html');
+	event.stopPropagation();
+	event.preventDefault();
+
+});
+	
+$("#nap42").click(function(event){
+	
+	event.stopPropagation();
+	event.preventDefault();
+
+});
+	
+$("#nap43").click(function(event){
+	showMockup('cim6.html');
+	event.stopPropagation();
+	event.preventDefault();
+
+});
+	
+$("#nap44").click(function(event){
+	showMockup('cim2.html');
+	event.stopPropagation();
+	event.preventDefault();
+
+});
+	
+$("#nap59").click(function(event){
+	
+	event.stopPropagation();
+	event.preventDefault();
+
+});
+	
+$("#nap60").click(function(event){
+	
+	event.stopPropagation();
+	event.preventDefault();
+
+});
+	
+$("#nap61").click(function(event){
+	
+	event.stopPropagation();
+	event.preventDefault();
+
+});
+	
+$("#nap62").click(function(event){
+	
+	event.stopPropagation();
+	event.preventDefault();
+
+});
+	
+$("#nap63").click(function(event){
+	
+	event.stopPropagation();
+	event.preventDefault();
+
+});
+	
+$("#nap64").click(function(event){
+	
+	event.stopPropagation();
+	event.preventDefault();
+
+});
+	
+$("#nap65").click(function(event){
+	
+	event.stopPropagation();
+	event.preventDefault();
+
+});
+	
+$("#nap66").click(function(event){
+	
+	event.stopPropagation();
+	event.preventDefault();
+
+});
+	
+$("#nap67").click(function(event){
+	
+	event.stopPropagation();
+	event.preventDefault();
+
+});
+	
+$("#nap68").click(function(event){
+	
+	event.stopPropagation();
+	event.preventDefault();
+
+});
+	
+$("#nap69").click(function(event){
+	
+	event.stopPropagation();
+	event.preventDefault();
+
+});
+	
+$("#nap70").click(function(event){
+	
+	event.stopPropagation();
+	event.preventDefault();
+
+});
+	
+$("#nap71").click(function(event){
+	
+	event.stopPropagation();
+	event.preventDefault();
+
+});
+	
+$("#nap72").click(function(event){
+	
+	event.stopPropagation();
+	event.preventDefault();
+
+});
+	
+$("#nap89").click(function(event){
+	showMockup('cim5.html');
+	event.stopPropagation();
+	event.preventDefault();
+
+});
+	
+$("#nap90").click(function(event){
+	
+	event.stopPropagation();
+	event.preventDefault();
+
+});
+	
+$("#nap91").click(function(event){
+	
+	event.stopPropagation();
+	event.preventDefault();
+
+});
+	
+$("#nap92").click(function(event){
+	
+	event.stopPropagation();
+	event.preventDefault();
+
+});
+	
+$("#nap93").click(function(event){
+	
+	event.stopPropagation();
+	event.preventDefault();
+
+});
+	
+$("#nap94").click(function(event){
+	
+	event.stopPropagation();
+	event.preventDefault();
+
+});
+	
+$("#nap95").click(function(event){
+	
+	event.stopPropagation();
+	event.preventDefault();
+
+});
+	
+$("#nap96").click(function(event){
+	
+	event.stopPropagation();
+	event.preventDefault();
+
+});
+	
+$("#nap97").click(function(event){
+	
+	event.stopPropagation();
+	event.preventDefault();
+
+});
+	
+$("#nap98").click(function(event){
+	
+	event.stopPropagation();
+	event.preventDefault();
+
+});
+	
+$("#nap99").click(function(event){
+	
+	event.stopPropagation();
+	event.preventDefault();
+
+});
+	
+$("#nap100").click(function(event){
+	
+	event.stopPropagation();
+	event.preventDefault();
+
+});
+	
+$("#nap101").click(function(event){
+	
+	event.stopPropagation();
+	event.preventDefault();
+
+});
+	
+$("#nap102").click(function(event){
+	
+	event.stopPropagation();
+	event.preventDefault();
+
+});
+	
+$("#nap103").click(function(event){
+	
+	event.stopPropagation();
+	event.preventDefault();
+
+});
+	
+$("#nap104").click(function(event){
+	
+	event.stopPropagation();
+	event.preventDefault();
+
+});
+	
+$("#nap105").click(function(event){
+	
+	event.stopPropagation();
+	event.preventDefault();
+
+});
+	
+$("#nap106").click(function(event){
+	
+	event.stopPropagation();
+	event.preventDefault();
+
+});
+	
+$("#nap107").click(function(event){
+	
+	event.stopPropagation();
+	event.preventDefault();
+
+});
+	
+$("#nap108").click(function(event){
+	
+	event.stopPropagation();
+	event.preventDefault();
+
+});
+	
+$("#nap109").click(function(event){
+	
+	event.stopPropagation();
+	event.preventDefault();
+
+});
+	
+$("#nap110").click(function(event){
+	
+	event.stopPropagation();
+	event.preventDefault();
+
+});
+	
+$("#nap111").click(function(event){
+	
+	event.stopPropagation();
+	event.preventDefault();
+
+});
+	
+$("#nap112").click(function(event){
+	
+	event.stopPropagation();
+	event.preventDefault();
+
+});
+	
+$("#nap113").click(function(event){
+	
+	event.stopPropagation();
+	event.preventDefault();
+
+});
+	
+$("#nap114").click(function(event){
+	
+	event.stopPropagation();
+	event.preventDefault();
+
+});
+	
+$("#nap115").click(function(event){
+	
+	event.stopPropagation();
+	event.preventDefault();
+
+});
+	
+$("#nap116").click(function(event){
+	
+	event.stopPropagation();
+	event.preventDefault();
+
+});
+	
+$("#nap117").click(function(event){
+	
+	event.stopPropagation();
+	event.preventDefault();
+
+});
+	
+		});
+	</script>
+  </body>
+</html>

@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Napkee export</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/datepicker.css">
+	<link rel="stylesheet" href="css/colorpicker.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/smoothness/jquery-ui-1.10.3.custom.min.css">
+	<link rel="stylesheet" href="css/jquery.orgchart.css">
+	<link rel="stylesheet" href="css/jquery.treeview.css">
+	
+	
+	<style type="text/css">
+	#napkeeCanvas {
+		position:absolute;
+		left:0px;
+		top:0px;
+	}
+	.napkeeComponent {
+		position:absolute;
+		white-space: nowrap;
+	}
+	.napkeeRelativeComponent {
+		position:absolute;
+		white-space: nowrap;
+	}
+	
+	
+#nap0{
+	left:41px;
+	top:41px;
+	width:113.30000000000001px;
+	height:21px;
+	z-index:0;
+	font-size: 14px;
+	font-style:normal;
+	font-weight:bold;
+	text-decoration:none;
+	text-align:left;
+	color:#000000;
+}
+	
+#nap1{
+	left:82px;
+	top:81px;
+	width:46.2px;
+	height:21px;
+	z-index:1;
+	font-size: 14px;
+	font-style:normal;
+	font-weight:normal;
+	text-decoration:none;
+	text-align:left;
+	color:#000000;
+}
+	
+#nap2{
+	left:82px;
+	top:242px;
+	width:60.50000000000001px;
+	height:21px;
+	z-index:2;
+	font-size: 14px;
+	font-style:normal;
+	font-weight:normal;
+	text-decoration:none;
+	text-align:left;
+	color:#000000;
+}
+	
+#nap3{
+	left:165px;
+	top:98px;
+	width:301px;
+	z-index:3;
+	background-color:#FFFFFF;
+	color:#000000;
+	font-size: 14px;
+	font-style:normal;
+	font-weight:normal;
+	text-decoration:none;
+	text-align:left;
+}
+	
+#nap4{
+	left:102px;
+	top:101px;
+	width:41.800000000000004px;
+	height:21px;
+	z-index:4;
+	font-size: 14px;
+	font-style:normal;
+	font-weight:normal;
+	text-decoration:none;
+	text-align:left;
+	color:#000000;
+}
+	
+#nap5{
+	left:102px;
+	top:139px;
+	width:168.3px;
+	height:21px;
+	z-index:5;
+	font-size: 14px;
+	font-style:normal;
+	font-weight:normal;
+	text-decoration:none;
+	text-align:left;
+	color:#000000;
+}
+	
+#nap6{
+	left:102px;
+	top:160px;
+	width:364px;
+	z-index:6;
+	background-color:#FFFFFF;
+	color:#000000;
+	font-size: 14px;
+	font-style:normal;
+	font-weight:normal;
+	text-decoration:none;
+	text-align:left;
+}
+	
+#containernap7{
+	left:51px;
+	top:81px;
+	width:16px;
+	height:21px;
+	z-index:7;
+	font-size: 14px;
+	font-style:normal;
+	font-weight:normal;
+	text-decoration:none;
+}
+	
+#containernap8{
+	left:51px;
+	top:242px;
+	width:16px;
+	height:21px;
+	z-index:8;
+	font-size: 14px;
+	font-style:normal;
+	font-weight:normal;
+	text-decoration:none;
+}
+	
+#nap9{
+	left:102px;
+	top:287px;
+	width:301px;
+	z-index:9;
+	background-color:#FFFFFF;
+	color:#000000;
+	font-size: 14px;
+	font-style:normal;
+	font-weight:normal;
+	text-decoration:none;
+	text-align:left;
+}
+	
+#nap10{
+	left:102px;
+	top:266px;
+	width:101.2px;
+	height:21px;
+	z-index:10;
+	font-size: 14px;
+	font-style:normal;
+	font-weight:normal;
+	text-decoration:none;
+	text-align:left;
+	color:#000000;
+}
+	
+#nap12{
+	left:124px;
+	top:328px;
+	width:75.9px;
+	height:21px;
+	z-index:11;
+	font-size: 14px;
+	font-style:normal;
+	font-weight:normal;
+	text-decoration:none;
+	text-align:left;
+	color:#000000;
+}
+	
+#nap13{
+	left:124px;
+	top:349px;
+	width:192px;
+	z-index:12;
+	background-color:#FFFFFF;
+	color:#000000;
+	font-size: 14px;
+	font-style:normal;
+	font-weight:normal;
+	text-decoration:none;
+	text-align:left;
+}
+	
+#nap14{
+	left:331px;
+	top:328px;
+	width:35.2px;
+	height:21px;
+	z-index:13;
+	font-size: 14px;
+	font-style:normal;
+	font-weight:normal;
+	text-decoration:none;
+	text-align:left;
+	color:#000000;
+}
+	
+#nap15{
+	left:331px;
+	top:349px;
+	width:192px;
+	z-index:14;
+	background-color:#FFFFFF;
+	color:#000000;
+	font-size: 14px;
+	font-style:normal;
+	font-weight:normal;
+	text-decoration:none;
+	text-align:left;
+}
+	
+#nap16{
+	left:538px;
+	top:328px;
+	width:128.70000000000002px;
+	height:21px;
+	z-index:15;
+	font-size: 14px;
+	font-style:normal;
+	font-weight:normal;
+	text-decoration:none;
+	text-align:left;
+	color:#000000;
+}
+	
+#nap17{
+	left:538px;
+	top:349px;
+	width:192px;
+	z-index:16;
+	background-color:#FFFFFF;
+	color:#000000;
+	font-size: 14px;
+	font-style:normal;
+	font-weight:normal;
+	text-decoration:none;
+	text-align:left;
+}
+	
+#nap18{
+	left:418px;
+	top:284px;
+	width:301px;
+	z-index:17;
+	background-color:#FFFFFF;
+	color:#000000;
+	font-size: 14px;
+	font-style:normal;
+	font-weight:normal;
+	text-decoration:none;
+	text-align:left;
+}
+	
+#nap19{
+	left:418px;
+	top:263px;
+	width:191.4px;
+	height:21px;
+	z-index:18;
+	font-size: 14px;
+	font-style:normal;
+	font-weight:normal;
+	text-decoration:none;
+	text-align:left;
+	color:#000000;
+}
+	
+#nap20{
+	left:41px;
+	top:480px;
+	z-index:19;
+}
+
+#nap20.napkee {
+	width:64px;
+	height:27px;
+	font-size: 14px;
+	font-style:normal;
+	font-weight:normal;
+	text-decoration:none;
+}
+
+	
+#nap21{
+	left:124px;
+	top:390px;
+	z-index:20;
+}
+
+#nap21.napkee {
+	width:120px;
+	height:27px;
+	font-size: 14px;
+	font-style:normal;
+	font-weight:normal;
+	text-decoration:none;
+}
+
+	
+	</style>
+	
+	<script src="js/jquery-1.10.2.min.js"></script>
+	<script src="js/jquery-ui-1.10.3.custom.min.js"></script>
+	<script src="js/jquery.migration.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+	<script src="js/bootstrap-datepicker.js"></script>
+    <script src="js/jquery.swfobject.1-0.5.min.js"></script>
+    <script src="js/swfobject.js"></script>
+    <script src="js/jquery.sparkline.min.js"></script>
+    <script src="js/bootstrap-colorpicker.js"></script>
+    <script src="js/jquery.tools.min.js"></script>
+    <script src="js/holder.js"></script>
+    <script src="js/jquery.orgchart.min.js"></script>
+    <script src="js/jquery.treeview.min.js"></script>
+    <script src="js/jquery.tagcloud.min.js"></script>
+	
+  </head>
+  <body>
+  
+	
+
+
+	
+<span id="nap0" class="napkeeComponent napkeeLabel ">Constrain values</span>
+	
+<span id="nap1" class="napkeeComponent napkeeLabel ">Values:</span>
+	
+<span id="nap2" class="napkeeComponent napkeeLabel ">Value set</span>
+	
+<input id="nap3" type="text" value="" class="napkeeComponent napkeeTextinput" />
+	
+<span id="nap4" class="napkeeComponent napkeeLabel ">Name:</span>
+	
+<span id="nap5" class="napkeeComponent napkeeLabel ">Comma seperated values:</span>
+	
+<input id="nap6" type="text" value="" class="napkeeComponent napkeeTextinput" />
+	
+<span id="containernap7" class="napkeeComponent napkeeRadiobutton">
+	<label for="nap7" class="radio"><input id="nap7" type="radio" name="nap7" />
+	</label>
+</span>
+	
+<span id="containernap8" class="napkeeComponent napkeeRadiobutton">
+	<label for="nap8" class="radio"><input id="nap8" type="radio" name="nap8" />
+	</label>
+</span>
+	
+<input id="nap9" type="text" value="" class="napkeeComponent napkeeTextinput" />
+	
+<span id="nap10" class="napkeeComponent napkeeLabel ">Value set name</span>
+	
+<span id="nap12" class="napkeeComponent napkeeLabel ">Value name</span>
+	
+<input id="nap13" type="text" value="" class="napkeeComponent napkeeTextinput" />
+	
+<span id="nap14" class="napkeeComponent napkeeLabel ">Value</span>
+	
+<input id="nap15" type="text" value="" class="napkeeComponent napkeeTextinput" />
+	
+<span id="nap16" class="napkeeComponent napkeeLabel ">Terminology binding</span>
+	
+<input id="nap17" type="text" value="" class="napkeeComponent napkeeTextinput" />
+	
+<input id="nap18" type="text" value="" class="napkeeComponent napkeeTextinput" />
+	
+<span id="nap19" class="napkeeComponent napkeeLabel ">Value set terminology binding</span>
+	
+<button id="nap20" type="button" class="napkeeComponent napkeeButton btn">&lt; Back</button>
+	
+<button id="nap21" type="button" class="napkeeComponent napkeeButton btn">+ Add new value</button>
+	
+	
+    <script type="text/javascript" charset="utf-8">
+	    function showMockup(url,params){
+			var finalUrl = url + "?";
+			if (params!=null){
+				jQuery.each(params, function(par, field){
+					finalUrl += par + "=" + $("#"+field).val() + "&";
+				});
+			}
+			location.href = finalUrl;
+		}
+		$(document).ready(function(){
+			$(".accordion").each(function(){
+				var _acc = $(this);
+				_acc.find(".accordion-inner").height(_acc.height() - (_acc.find(".accordion-inner").length * 36));
+			});
+			$(document).on("click", function(e){
+				$("[data-date]").datepicker('show');
+			});
+		
+			
+$("#nap0").click(function(event){
+	
+	event.stopPropagation();
+	event.preventDefault();
+
+});
+	
+$("#nap1").click(function(event){
+	
+	event.stopPropagation();
+	event.preventDefault();
+
+});
+	
+$("#nap2").click(function(event){
+	
+	event.stopPropagation();
+	event.preventDefault();
+
+});
+	
+$("#nap3").click(function(event){
+	event.stopPropagation();
+	event.preventDefault();
+});
+	
+$("#nap4").click(function(event){
+	
+	event.stopPropagation();
+	event.preventDefault();
+
+});
+	
+$("#nap5").click(function(event){
+	
+	event.stopPropagation();
+	event.preventDefault();
+
+});
+	
+$("#nap6").click(function(event){
+	event.stopPropagation();
+	event.preventDefault();
+});
+	
+$("#containernap7").click(function(event){
+	
+	event.stopPropagation();
+	event.preventDefault();
+
+});
+	
+$("#containernap8").click(function(event){
+	
+	event.stopPropagation();
+	event.preventDefault();
+
+});
+	
+$("#nap9").click(function(event){
+	event.stopPropagation();
+	event.preventDefault();
+});
+	
+$("#nap10").click(function(event){
+	
+	event.stopPropagation();
+	event.preventDefault();
+
+});
+	
+$("#nap12").click(function(event){
+	
+	event.stopPropagation();
+	event.preventDefault();
+
+});
+	
+$("#nap13").click(function(event){
+	event.stopPropagation();
+	event.preventDefault();
+});
+	
+$("#nap14").click(function(event){
+	
+	event.stopPropagation();
+	event.preventDefault();
+
+});
+	
+$("#nap15").click(function(event){
+	event.stopPropagation();
+	event.preventDefault();
+});
+	
+$("#nap16").click(function(event){
+	
+	event.stopPropagation();
+	event.preventDefault();
+
+});
+	
+$("#nap17").click(function(event){
+	event.stopPropagation();
+	event.preventDefault();
+});
+	
+$("#nap18").click(function(event){
+	event.stopPropagation();
+	event.preventDefault();
+});
+	
+$("#nap19").click(function(event){
+	
+	event.stopPropagation();
+	event.preventDefault();
+
+});
+	
+$("#nap20").click(function(event){
+	showMockup('cim3.html');
+	event.stopPropagation();
+	event.preventDefault();
+
+});
+	
+$("#nap21").click(function(event){
+	
+	event.stopPropagation();
+	event.preventDefault();
+
+});
+	
+		});
+	</script>
+  </body>
+</html>

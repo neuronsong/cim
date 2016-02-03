@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Napkee export</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/datepicker.css">
+	<link rel="stylesheet" href="css/colorpicker.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/smoothness/jquery-ui-1.10.3.custom.min.css">
+	<link rel="stylesheet" href="css/jquery.orgchart.css">
+	<link rel="stylesheet" href="css/jquery.treeview.css">
+	
+	
+	<style type="text/css">
+	#napkeeCanvas {
+		position:absolute;
+		left:0px;
+		top:0px;
+	}
+	.napkeeComponent {
+		position:absolute;
+		white-space: nowrap;
+	}
+	.napkeeRelativeComponent {
+		position:absolute;
+		white-space: nowrap;
+	}
+	
+	
+#nap0{
+	left:40px;
+	top:77px;
+	width:101px;
+	z-index:0;
+	font-size: 14px;
+	font-style:normal;
+	font-weight:normal;
+	text-decoration:none;
+}
+	
+#nap1{
+	left:185px;
+	top:77px;
+	z-index:1;
+}
+
+#nap1.napkee {
+	width:88px;
+	height:27px;
+	font-size: 14px;
+	font-style:normal;
+	font-weight:normal;
+	text-decoration:none;
+}
+
+	
+#nap2{
+	left:40px;
+	top:41px;
+	width:255.20000000000002px;
+	height:21px;
+	z-index:2;
+	font-size: 14px;
+	font-style:normal;
+	font-weight:bold;
+	text-decoration:none;
+	text-align:left;
+	color:#000000;
+}
+	
+	</style>
+	
+	<script src="js/jquery-1.10.2.min.js"></script>
+	<script src="js/jquery-ui-1.10.3.custom.min.js"></script>
+	<script src="js/jquery.migration.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+	<script src="js/bootstrap-datepicker.js"></script>
+    <script src="js/jquery.swfobject.1-0.5.min.js"></script>
+    <script src="js/swfobject.js"></script>
+    <script src="js/jquery.sparkline.min.js"></script>
+    <script src="js/bootstrap-colorpicker.js"></script>
+    <script src="js/jquery.tools.min.js"></script>
+    <script src="js/holder.js"></script>
+    <script src="js/jquery.orgchart.min.js"></script>
+    <script src="js/jquery.treeview.min.js"></script>
+    <script src="js/jquery.tagcloud.min.js"></script>
+	
+  </head>
+  <body>
+  
+	
+
+
+	
+<select id="nap0" class="napkeeComponent napkeeCombobox">
+<option></option><option>Observation</option><option>Procedure</option><option>Assertion</option>
+</select>
+	
+<button id="nap1" type="button" class="napkeeComponent napkeeButton btn">Continue &gt;</button>
+	
+<span id="nap2" class="napkeeComponent napkeeLabel ">Select a clinical pattern to specialize</span>
+	
+	
+    <script type="text/javascript" charset="utf-8">
+	    function showMockup(url,params){
+			var finalUrl = url + "?";
+			if (params!=null){
+				jQuery.each(params, function(par, field){
+					finalUrl += par + "=" + $("#"+field).val() + "&";
+				});
+			}
+			location.href = finalUrl;
+		}
+		$(document).ready(function(){
+			$(".accordion").each(function(){
+				var _acc = $(this);
+				_acc.find(".accordion-inner").height(_acc.height() - (_acc.find(".accordion-inner").length * 36));
+			});
+			$(document).on("click", function(e){
+				$("[data-date]").datepicker('show');
+			});
+		
+			
+$("#nap0").click(function(event){
+	
+	event.stopPropagation();
+	event.preventDefault();
+
+});
+	
+$("#nap1").click(function(event){
+	showMockup('cim2.html');
+	event.stopPropagation();
+	event.preventDefault();
+
+});
+	
+$("#nap2").click(function(event){
+	
+	event.stopPropagation();
+	event.preventDefault();
+
+});
+	
+		});
+	</script>
+  </body>
+</html>
