@@ -46,7 +46,7 @@
 	
 #nap2{
 	left:38px;
-	top:124px;
+	top:211px;
 	width:438px;
 	height:196px;
 	z-index:1;
@@ -64,7 +64,7 @@
 #nap3{
 	left:38px;
 	top:41px;
-	width:220.00000000000003px;
+	width:139.70000000000002px;
 	height:21px;
 	z-index:2;
 	font-size: 14px;
@@ -77,7 +77,7 @@
 	
 #nap4{
 	left:38px;
-	top:103px;
+	top:190px;
 	width:178.20000000000002px;
 	height:21px;
 	z-index:3;
@@ -91,7 +91,7 @@
 	
 #nap5{
 	left:117px;
-	top:340px;
+	top:427px;
 	z-index:4;
 }
 
@@ -107,7 +107,7 @@
 	
 #nap6{
 	left:38px;
-	top:340px;
+	top:427px;
 	z-index:5;
 }
 
@@ -120,6 +120,34 @@
 	text-decoration:none;
 }
 
+	
+#nap7{
+	left:38px;
+	top:135px;
+	width:438px;
+	z-index:6;
+	background-color:#FFFFFF;
+	color:#000000;
+	font-size: 14px;
+	font-style:normal;
+	font-weight:normal;
+	text-decoration:none;
+	text-align:left;
+}
+	
+#nap8{
+	left:38px;
+	top:114px;
+	width:234.3px;
+	height:21px;
+	z-index:7;
+	font-size: 14px;
+	font-style:normal;
+	font-weight:bold;
+	text-decoration:none;
+	text-align:left;
+	color:#000000;
+}
 	
 	</style>
 	
@@ -149,13 +177,17 @@
 	
 <textarea id="nap2" class="napkeeComponent napkeeTextarea"></textarea>
 	
-<span id="nap3" class="napkeeComponent napkeeLabel ">Enter a name for the new model</span>
+<span id="nap3" class="napkeeComponent napkeeLabel ">Name for new model</span>
 	
-<span id="nap4" class="napkeeComponent napkeeLabel ">Enter a model description</span>
+<span id="nap4" class="napkeeComponent napkeeLabel ">Description for new model</span>
 	
 <button id="nap5" type="button" class="napkeeComponent napkeeButton btn">Continue &gt;</button>
 	
 <button id="nap6" type="button" class="napkeeComponent napkeeButton btn">&lt; Back</button>
+	
+<input id="nap7" type="text" value="" class="napkeeComponent napkeeTextinput" />
+	
+<span id="nap8" class="napkeeComponent napkeeLabel ">Terminology binding for new model</span>
 	
 	
     <script type="text/javascript" charset="utf-8">
@@ -206,6 +238,18 @@ $("#nap5").click(function(event){
 	
 $("#nap6").click(function(event){
 	showMockup('cim.html');
+	event.stopPropagation();
+	event.preventDefault();
+
+});
+	
+$("#nap7").click(function(event){
+	event.stopPropagation();
+	event.preventDefault();
+});
+	
+$("#nap8").click(function(event){
+	
 	event.stopPropagation();
 	event.preventDefault();
 
