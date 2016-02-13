@@ -7,7 +7,7 @@
 *.war
 *.ear
 
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+# Virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
 
 # Mac
@@ -23,3 +23,10 @@ target/*
 # Project-specific
 generated-source/*
 /bin/
+
+*.log
+
+# npm packages
+node_modules/
+# Outputted webapp
+dist/
