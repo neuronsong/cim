@@ -30,3 +30,8 @@ generated-source/*
 node_modules/
 # Outputted webapp
 dist/
+*.map
+
+*.map
+
+*.js
