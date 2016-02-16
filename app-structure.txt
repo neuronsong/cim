@@ -1,0 +1,33 @@
+
+ModelPatternComponent
+    Pattern
+
+ModelComponent
+    New
+    Load
+    Save - use a directive to make any changes to the dom
+
+
+internal model state in a service?
+
+ADLService
+    CRUD
+
+FHIRService
+    CRUD
+
+
+
+ModelEditorComponent
+
+ModelViewerComponent
+    ModelTreeViewComponent
+    ModelMindmapViewComponent
+    ModelSourceViewComponent
+
+ModelLoaderComponent
+
+
+
+
+
