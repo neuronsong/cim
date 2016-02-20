@@ -35,3 +35,7 @@ dist/
 *.map
 
 *.js
+
+cimi-editor-web/src/main/webapp/gulpfile.js.map
+
+cimi-editor-web/src/main/webapp/gulpfile.js
