@@ -24,3 +24,5 @@ When working with internal scripts, you should edit only files which end in .ts 
 ### Resources
 
 [Angular 2.0 Style Guide](https://github.com/mgechev/angular2-style-guide)
+
+[Angular 2.0 Sample Components](https://github.com/thelgevold/angular-2-samples)

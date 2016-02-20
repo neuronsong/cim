@@ -1,0 +1,16 @@
+<h1>Pattern Selector</h1>
+
+<form (ngSubmit)="onSubmit()" #patternForm="ngForm">
+    <div class="form-row">
+        <div [hidden]="pattern.valid || pattern.pristine" class="alert alert-danger" role="alert">
+            Please select a clinical pattern
+        </div>
+        <div class="formHeading">Select a clinical pattern to specialize</div>
+        <select required [(ngModel)]="model.pattern" ngControl="pattern" #pattern="ngForm">
+            <option *ngFor="#p of patterns" [value]="p">{{p | capitalize}}</option>
+        </select>
+    </div>
+    <div class="form-row">
+        <button type="submit" [disabled]="!patternForm.form.valid">Continue</button>
+    </div>
+</form>

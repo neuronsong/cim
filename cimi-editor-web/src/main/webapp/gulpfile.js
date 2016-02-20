@@ -2,10 +2,11 @@
 var gulp = require('gulp');
 var del = require('del'); //Cleans directories
 var typescript = require('gulp-typescript'); //Allows compilation of .ts files for Gulp
-var tscConfig = require('./tsconfig.json');
-var sourcemaps = require('gulp-sourcemaps');
-var tslint = require('gulp-tslint');
-var browserSync = require('browser-sync').create();
+var tscConfig = require('./tsconfig.json'); //Pulls in TypeScript configuration files
+var sourcemaps = require('gulp-sourcemaps'); //Generates sourcemaps
+var tslint = require('gulp-tslint'); //Lints TypeScript
+var browserSync = require('browser-sync').create(); //Creates a server object
+var historyApiFallback = require('connect-history-api-fallback');
 var sass = require('gulp-sass'); // Adds Sass compilation tools
 var source = {
     styles: 'app/styles/main.scss',
@@ -23,19 +24,27 @@ gulp.task('clean', function () {
     del.sync(destination.all); // Delete everything in 'dist'
 });
 // copy static assets (i.e., non TypeScript compiled source)
-gulp.task('copy:assets', ['clean'], function () {
-    return gulp.src(['!app/assets/styles/**/*', '!app/**/*.ts', 'app/**/*', 'index.html'], { base: './' })
+gulp.task('copy:assets', function () {
+    return gulp.src(['!app/assets/styles/**/*', '!app/**/*.ts', '!app/index.html', 'app/**/*'], { base: './' })
+        .pipe(gulp.dest('dist'));
+});
+// copy app index to dist root (to avoid rewriting)
+gulp.task('copy:base', function () {
+    return gulp.src(['app/index.html'], { base: '' })
         .pipe(gulp.dest('dist'));
 });
 // copy dependencies
 // remember to update this every time you add a library
-gulp.task('copy:libs', function () {
-    gulp.src([
+gulp.task('copy:libs', ['clean'], function () {
+    return gulp.src([
         'node_modules/es6-shim/es6-shim.min.js',
+        'node_modules/es6-shim/es6-shim.map',
         'node_modules/systemjs/dist/system-polyfills.js',
+        'node_modules/systemjs/dist/system-polyfills.js.map',
         'node_modules/angular2/bundles/angular2-polyfills.js',
         'node_modules/systemjs/dist/system.src.js',
         'node_modules/rxjs/bundles/Rx.js',
+        'node_modules/rxjs/bundles/Rx.js.map',
         'node_modules/angular2/bundles/angular2.dev.js',
         'node_modules/angular2/bundles/router.dev.js'
     ])
@@ -43,13 +52,13 @@ gulp.task('copy:libs', function () {
 });
 //linting
 gulp.task('tslint', function () {
-    gulp.src(source.scripts)
+    return gulp.src(source.scripts)
         .pipe(tslint())
         .pipe(tslint.report('verbose'));
 });
 // TypeScript compile
 gulp.task('compile', function () {
-    gulp.src(source.scripts)
+    return gulp.src(source.scripts)
         .pipe(sourcemaps.init())
         .pipe(typescript(tscConfig.compilerOptions))
         .pipe(sourcemaps.write('.'))
@@ -59,13 +68,13 @@ gulp.task('compile', function () {
 gulp.task('serve', ['build'], function () {
     browserSync.init({
         server: {
-            baseDir: './dist'
+            baseDir: './dist',
+            middleware: [historyApiFallback()]
         }
     });
-    gulp.watch(['app/**/*', 'index.html'], ['buildAndReload']);
-    //gulp.watch(['app/assets/styles/**/*.scss'], ['sass']);
+    gulp.watch(['app/**/*', 'app/index.html'], ['buildAndReload']);
 });
-gulp.task('build', ['tslint', 'clean', 'compile', 'sass', 'copy:libs', 'copy:assets']);
+gulp.task('build', ['clean', 'compile', 'sass', 'copy:libs', 'copy:assets', 'copy:base']);
 gulp.task('buildAndReload', ['build'], browserSync.reload);
 gulp.task('default', ['build']);
 // Compile sass into CSS & auto-inject into browsers

@@ -7,11 +7,15 @@
     "lite": "lite-server",
     "prestart": "npm install",
     "pretest": "npm install",
-    "start": "concurrent \"npm run tsc:w\" \"gulp serve\" ",
+    "start": "concurrent \"npm run tsc:w\" \"gulp serve\" \"gulp tslint\" ",
     "tslint": "tslint -c tslint.json app/**/*.ts",
     "postinstall": "tsd install"
   },
-  "license": "Apache License, Version 2.0",
+  "license": "Apache-2.0",
+  "repository": {
+      "type": "git",
+      "url": "https://github.com/neuronsong/cim.git"
+  },
   "dependencies": {
     "angular2": "2.0.0-beta.3",
     "systemjs": "0.19.6",
@@ -31,6 +35,7 @@
     "gulp-sass": "^2.2.0",
     "tslint": "^3.2.1",
     "lite-server": "^2.0.1",
+    "connect-history-api-fallback": "^1.1.0",
     "typescript": "^1.7.5"
   }
 }
