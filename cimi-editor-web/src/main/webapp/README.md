@@ -1,4 +1,4 @@
-# CIMI Editor
+# Clinical Information Modeling (CIM) Editor
 
 ### Getting Started
 
@@ -26,3 +26,9 @@ When working with internal scripts, you should edit only files which end in .ts 
 [Angular 2.0 Style Guide](https://github.com/mgechev/angular2-style-guide)
 
 [Angular 2.0 Sample Components](https://github.com/thelgevold/angular-2-samples)
+
+[TypeScript](http://www.typescriptlang.org)
+
+[Node.js](https://nodejs.org/en/)
+
+[npm.js](https://www.npmjs.com)
