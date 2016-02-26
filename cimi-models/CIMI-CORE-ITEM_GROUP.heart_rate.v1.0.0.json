@@ -1,0 +1,755 @@
+{
+	"original_language": "ISO_639-1::en",
+	"description": {
+		"lifecycle_state": "unmanaged",
+		"original_author": [{
+			"name": "Patrick Langford",
+			"organisation": "Intermountain Healthcare",
+			"email": "patrick@neuronsong.com",
+			"date": "10/01/2015"
+		}],
+		"custodian_namespace": "org.opencimi",
+		"custodian_organisation": "Clinical Information Modeling Initiative <http://opencimi.org>",
+		"copyright": "Copyright (c) Clinical Information Modelling Initiative <http://opencimi.org>",
+		"licence": "Creative Commons CC-BY <https://creativecommons.org/licenses/by/3.0/>",
+		"ip_acknowledgements": [{
+			"loinc": "This content from LOINC® is copyright © 1995 Regenstrief Institute, Inc. and the LOINC Committee, and available at no cost under the license at http://loinc.org/terms-of-use",
+			"snomed": "This specification includes SNOMED Clinical Terms® (SNOMED CT®) which is used by permission of the International Health Terminology Standards Development Organization (IHTSDO). All rights reserved. SNOMED CT® was originally created by the College of American Pathologists. 'SNOMED' and 'SNOMED CT' are registered trademarks of the IHTSDO (www.ihtsdo.org). Use of any SNOMED CT content (including codes, identifiers, terms, expressions or derivatives) in any operational system (including any Data Creation System or Data Analysis System as defined in the SNOMED CT Affiliate License Agreement) is subject to the terms and conditions of the SNOMED CT Affiliate License (www.ihtsdo.org/license.pdf) or to a written variation to that agreement that has been agreed and formally executed between the IHTSDO and the Affiliate Licensee."
+		}],
+		"details": [{
+			"en": {
+				"language": "ISO_639-1::en",
+				"purpose": "Archetype for CIMI 'heart rate measurement' concept",
+				"use": "Use for heart rate measurements.",
+				"keywords": ["heart rate", "measurement"]
+			}
+		}],
+		"other_contributors": ["Linda Bird <lbi@ihtsdo.org>", "Joey Coyle <joey@xcoyle.com>", "Stan Huff <Stan.Huff@imail.org>", "Harold Solbrig <Solbrig.Harold@mayo.edu>", "Thomas Beale <thomas.beale@oceaninformatics.com>", "Tom Oniki <Tom.Oniki@imail.org>", "Claude Nanjo <cnanjo@cognitivemedicine.com>"]
+	},
+	"artefact_type": "archetype",
+	"archetype_id": {
+		"physical_id": "CIMI-CORE-ITEM_GROUP.heart_rate.v1.0.0",
+		"rm_publisher": "CIMI",
+		"rm_package": "CORE",
+		"rm_class": "ITEM_GROUP",
+		"concept_id": "heart_rate",
+		"release_version": "1.0.0",
+		"version_status": 0,
+		"build_count": 0
+	},
+	"parent_archetype_id": "CIMI-CORE-ITEM_GROUP.observation_result.v1",
+	"definition": {
+		"rm_type_name": "ITEM_GROUP",
+		"node_id": "id1.1.1.1",
+		"attributes": [
+			{
+				"rm_attribute_name": "item",
+				"children": [
+					{
+						"rm_type_name": "ITEM_GROUP",
+						"node_id": "id2",
+						"archetype_ref": "CIMI-CORE-ITEM_GROUP.subject_of_information.v1",
+						"is_deprecated": false,
+						"is_frozen": false
+					},
+					{
+						"rm_type_name": "ITEM_GROUP",
+						"node_id": "id4",
+						"archetype_ref": "CIMI-CORE-ITEM_GROUP.cluster.v1",
+						"is_deprecated": false,
+						"is_frozen": false
+					},
+					{
+						"rm_type_name": "ELEMENT",
+						"node_id": "id5",
+						"occurrences": "0..*",
+						"is_deprecated": false,
+						"is_frozen": false
+					},
+					{
+						"rm_type_name": "ELEMENT",
+						"node_id": "id5.0.1",
+						"occurrences": "0..*",
+						"attributes": [
+							{
+								"rm_attribute_name": "value",
+								"children": [
+									{
+										"rm_type_name": "IDENTIFIER",
+										"node_id": "id0.0.101",
+										"is_deprecated": false,
+										"is_frozen": false
+									}
+								],
+								"is_multiple": false
+							}
+						],
+						"is_deprecated": false,
+						"is_frozen": false
+					},
+					{
+						"rm_type_name": "ELEMENT",
+						"node_id": "id5.0.2",
+						"occurrences": "1",
+						"attributes": [
+							{
+								"rm_attribute_name": "value",
+								"children": [
+									{
+										"rm_type_name": "CODED_TEXT",
+										"node_id": "id0.0.102",
+										"is_deprecated": false,
+										"is_frozen": false
+									}
+								],
+								"existence": "1",
+								"is_multiple": false
+							},
+							{
+								"rm_attribute_name": "null_flavor",
+								"existence": "0",
+								"is_multiple": false
+							}
+						],
+						"is_deprecated": false,
+						"is_frozen": false
+					},
+					{
+						"rm_type_name": "ELEMENT",
+						"node_id": "id5.0.3",
+						"occurrences": "0..*",
+						"attributes": [
+							{
+								"rm_attribute_name": "value",
+								"children": [
+									{
+										"rm_type_name": "CODED_TEXT",
+										"node_id": "id0.0.103",
+										"is_deprecated": false,
+										"is_frozen": false
+									}
+								],
+								"is_multiple": false
+							}
+						],
+						"is_deprecated": false,
+						"is_frozen": false
+					},
+					{
+						"rm_type_name": "ELEMENT",
+						"node_id": "id5.0.4",
+						"occurrences": "0..*",
+						"attributes": [
+							{
+								"rm_attribute_name": "value",
+								"children": [
+									{
+										"rm_type_name": "CODED_TEXT",
+										"node_id": "id0.0.104",
+										"is_deprecated": false,
+										"is_frozen": false
+									}
+								],
+								"is_multiple": false
+							}
+						],
+						"is_deprecated": false,
+						"is_frozen": false
+					},
+					{
+						"rm_type_name": "ELEMENT",
+						"node_id": "id5.0.5",
+						"occurrences": "0..1",
+						"attributes": [
+							{
+								"rm_attribute_name": "value",
+								"children": [
+									{
+										"rm_type_name": "CODED_TEXT",
+										"node_id": "id0.0.105",
+										"attributes": [
+											{
+												"rm_attribute_name": "code",
+												"children": [
+													{
+														"rm_type_name": "STRING",
+														"node_id": "id9999",
+														"constraint": ["final", "entered-in-error", "unknown"],
+														"is_deprecated": false,
+														"is_frozen": false,
+														"is_enumerated_type_constraint": false
+													}
+												],
+												"is_multiple": false
+											}
+										],
+										"is_deprecated": false,
+										"is_frozen": false
+									}
+								],
+								"is_multiple": false
+							}
+						],
+						"is_deprecated": false,
+						"is_frozen": false
+					},
+					{
+						"rm_type_name": "ELEMENT",
+						"node_id": "id5.0.8",
+						"occurrences": "0..1",
+						"attributes": [
+							{
+								"rm_attribute_name": "value",
+								"children": [
+									{
+										"rm_type_name": "CODED_TEXT",
+										"node_id": "id0.0.0.100",
+										"attributes": [
+											{
+												"rm_attribute_name": "code",
+												"children": [
+													{
+														"rm_type_name": "STRING",
+														"node_id": "id9999",
+														"constraint": ["beats per minute"],
+														"is_deprecated": false,
+														"is_frozen": false,
+														"is_enumerated_type_constraint": false
+													}
+												],
+												"is_multiple": false
+											}
+										],
+										"is_deprecated": false,
+										"is_frozen": false
+									}
+								],
+								"is_multiple": false
+							}
+						],
+						"is_deprecated": false,
+						"is_frozen": false
+					},
+					{
+						"rm_type_name": "ELEMENT",
+						"node_id": "id5.0.12",
+						"occurrences": "0..1",
+						"attributes": [
+							{
+								"rm_attribute_name": "value",
+								"children": [
+									{
+										"rm_type_name": "CODED_TEXT",
+										"node_id": "id0.0.112",
+										"attributes": [
+											{
+												"rm_attribute_name": "code",
+												"children": [
+													{
+														"rm_type_name": "STRING",
+														"node_id": "id9999",
+														"constraint": ["U", "D", "B", "W"],
+														"is_deprecated": false,
+														"is_frozen": false,
+														"is_enumerated_type_constraint": false
+													}
+												],
+												"is_multiple": false
+											}
+										],
+										"is_deprecated": false,
+										"is_frozen": false
+									}
+								],
+								"is_multiple": false
+							}
+						],
+						"is_deprecated": false,
+						"is_frozen": false
+					},
+					{
+						"rm_type_name": "ELEMENT",
+						"node_id": "id5.0.14",
+						"occurrences": "0..*",
+						"attributes": [
+							{
+								"rm_attribute_name": "value",
+								"children": [
+									{
+										"rm_type_name": "TEXT",
+										"node_id": "id0.0.114",
+										"is_deprecated": false,
+										"is_frozen": false
+									}
+								],
+								"is_multiple": false
+							}
+						],
+						"is_deprecated": false,
+						"is_frozen": false
+					},
+					{
+						"rm_type_name": "ELEMENT",
+						"node_id": "id0.0.0.1",
+						"occurrences": "0..1",
+						"attributes": [
+							{
+								"rm_attribute_name": "value",
+								"children": [
+									{
+										"rm_type_name": "CODED_TEXT",
+										"node_id": "id0.0.0.101",
+										"attributes": [
+											{
+												"rm_attribute_name": "code",
+												"children": [
+													{
+														"rm_type_name": "STRING",
+														"node_id": "id9999",
+														"constraint": ["ac0.0.0.201"],
+														"is_deprecated": false,
+														"is_frozen": false,
+														"is_enumerated_type_constraint": false
+													}
+												],
+												"is_multiple": false
+											}
+										],
+										"is_deprecated": false,
+										"is_frozen": false
+									}
+								],
+								"is_multiple": false
+							}
+						],
+						"is_deprecated": false,
+						"is_frozen": false
+					},
+					{
+						"rm_type_name": "ELEMENT",
+						"node_id": "id0.0.0.2",
+						"occurrences": "0..1",
+						"attributes": [
+							{
+								"rm_attribute_name": "value",
+								"children": [
+									{
+										"rm_type_name": "CODED_TEXT",
+										"node_id": "id0.0.0.102",
+										"attributes": [
+											{
+												"rm_attribute_name": "code",
+												"children": [
+													{
+														"rm_type_name": "STRING",
+														"node_id": "id9999",
+														"constraint": ["ac0.0.0.202"],
+														"is_deprecated": false,
+														"is_frozen": false,
+														"is_enumerated_type_constraint": false
+													}
+												],
+												"is_multiple": false
+											}
+										],
+										"is_deprecated": false,
+										"is_frozen": false
+									}
+								],
+								"is_multiple": false
+							}
+						],
+						"is_deprecated": false,
+						"is_frozen": false
+					},
+					{
+						"rm_type_name": "ELEMENT",
+						"node_id": "id0.0.0.3",
+						"occurrences": "0..1",
+						"attributes": [
+							{
+								"rm_attribute_name": "value",
+								"children": [
+									{
+										"rm_type_name": "CODED_TEXT",
+										"node_id": "id0.0.0.103",
+										"attributes": [
+											{
+												"rm_attribute_name": "code",
+												"children": [
+													{
+														"rm_type_name": "STRING",
+														"node_id": "id9999",
+														"constraint": ["ac0.0.0.203"],
+														"is_deprecated": false,
+														"is_frozen": false,
+														"is_enumerated_type_constraint": false
+													}
+												],
+												"is_multiple": false
+											}
+										],
+										"is_deprecated": false,
+										"is_frozen": false
+									}
+								],
+								"is_multiple": false
+							}
+						],
+						"is_deprecated": false,
+						"is_frozen": false
+					},
+					{
+						"rm_type_name": "ELEMENT",
+						"node_id": "id0.0.0.4",
+						"occurrences": "0..1",
+						"attributes": [
+							{
+								"rm_attribute_name": "value",
+								"children": [
+									{
+										"rm_type_name": "CODED_TEXT",
+										"node_id": "id0.0.0.104",
+										"attributes": [
+											{
+												"rm_attribute_name": "code",
+												"children": [
+													{
+														"rm_type_name": "STRING",
+														"node_id": "id9999",
+														"constraint": ["ac0.0.0.204"],
+														"is_deprecated": false,
+														"is_frozen": false,
+														"is_enumerated_type_constraint": false
+													}
+												],
+												"is_multiple": false
+											}
+										],
+										"is_deprecated": false,
+										"is_frozen": false
+									}
+								],
+								"is_multiple": false
+							}
+						],
+						"is_deprecated": false,
+						"is_frozen": false
+					},
+					{
+						"rm_type_name": "ITEM_GROUP",
+						"node_id": "id4.0.1",
+						"archetype_ref": "CIMI-CORE-ITEM_GROUP.observation_action_set.v1",
+						"is_deprecated": false,
+						"is_frozen": false
+					}
+				],
+				"is_multiple": true
+			}
+		],
+		"is_deprecated": false,
+		"is_frozen": false
+	},
+	"terminology": {
+		"original_language": "ISO_639-1::en",
+		"term_definitions": [{
+			"en": {
+				"items": [{
+					"id1": {
+						"text": "Clinical Statment"
+					},
+					"id2": {
+						"text": "Subject of information"
+					},
+					"id4": {
+						"text": "Cluster"
+					},
+					"id5": {
+						"text": "Element"
+					},
+					"id1.1": {
+						"text": "Indivisible clinical statement"
+					},
+					"id1.1.1": {
+						"text": "Observation Result"
+					},
+					"id4.0.1": {
+						"text": "Action set"
+					},
+					"id5.0.1": {
+						"text": "Identifier"
+					},
+					"id5.0.10": {
+						"text": "Reference range"
+					},
+					"id5.0.11": {
+						"text": "Sequence"
+					},
+					"id5.0.12": {
+						"text": "Delta flag"
+					},
+					"id5.0.13": {
+						"text": "Signal flag"
+					},
+					"id5.0.14": {
+						"text": "Comment"
+					},
+					"id5.0.2": {
+						"text": "Code"
+					},
+					"id5.0.3": {
+						"text": "Reason"
+					},
+					"id5.0.4": {
+						"text": "Method"
+					},
+					"id5.0.5": {
+						"text": "Status"
+					},
+					"id5.0.6": {
+						"text": "Priority"
+					},
+					"id5.0.7": {
+						"text": "Interpretation category"
+					},
+					"id5.0.8": {
+						"text": "Result"
+					},
+					"id5.0.9": {
+						"text": "Normal range"
+					},
+					"ac0.0.0.201": {
+						"text": "Body Location Precoord Value Set"
+					},
+					"ac0.0.0.202": {
+						"text": "Body Position Value Set"
+					},
+					"ac0.0.0.203": {
+						"text": "Associated Precondition Value Set"
+					},
+					"ac0.0.0.204": {
+						"text": "Device Value Set"
+					},
+					"at0.0.0.301": {
+						"text": "Left radial artery"
+					},
+					"at0.0.0.302": {
+						"text": "Right radial artery"
+					},
+					"at0.0.0.303": {
+						"text": "Left common carotid artery"
+					},
+					"at0.0.0.304": {
+						"text": "Right common carotid artery"
+					},
+					"at0.0.0.305": {
+						"text": "Left axillary artery"
+					},
+					"at0.0.0.306": {
+						"text": "Right axillary artery"
+					},
+					"at0.0.0.307": {
+						"text": "Brachial artery"
+					},
+					"at0.0.0.308": {
+						"text": "Right ulnar artery"
+					},
+					"at0.0.0.309": {
+						"text": "Left ulnar artery"
+					},
+					"at0.0.0.310": {
+						"text": "Right femoral artery"
+					},
+					"at0.0.0.311": {
+						"text": "Left femoral artery"
+					},
+					"at0.0.0.312": {
+						"text": "Right popliteal artery"
+					},
+					"at0.0.0.313": {
+						"text": "Left popliteal artery"
+					},
+					"at0.0.0.314": {
+						"text": "Dorsalis pedis artery"
+					},
+					"at0.0.0.315": {
+						"text": "Right posterior tibial artery"
+					},
+					"at0.0.0.316": {
+						"text": "Left posterior tibial artery"
+					},
+					"at0.0.0.317": {
+						"text": "Facial artery"
+					},
+					"at0.0.0.318": {
+						"text": "Superficial temporal artery"
+					},
+					"at0.0.0.319": {
+						"text": "Apex of heart"
+					},
+					"at0.0.0.320": {
+						"text": "Supine Body Position"
+					},
+					"at0.0.0.321": {
+						"text": "Sitting Position"
+					},
+					"at0.0.0.322": {
+						"text": "Orthostatic Body Position"
+					},
+					"at0.0.0.323": {
+						"text": "After Exercise"
+					},
+					"at0.0.0.324": {
+						"text": "Antepartum"
+					},
+					"at0.0.0.325": {
+						"text": "At Rest"
+					},
+					"at0.0.0.326": {
+						"text": "Before Exercise"
+					},
+					"at0.0.0.327": {
+						"text": "During Exercise"
+					},
+					"at0.0.0.328": {
+						"text": "Post-dose"
+					},
+					"at0.0.0.329": {
+						"text": "Pre-dose"
+					},
+					"at0.0.0.330": {
+						"text": "Preoperative"
+					},
+					"at0.0.0.331": {
+						"text": "Postpartum"
+					},
+					"at0.0.0.332": {
+						"text": "Postoperative"
+					},
+					"at0.0.0.333": {
+						"text": "Intraoperative"
+					},
+					"at0.0.0.334": {
+						"text": "Intrapartum"
+					},
+					"at0.0.0.335": {
+						"text": "Arterial Line"
+					},
+					"at0.0.0.336": {
+						"text": "Cardiovascular Monitor"
+					},
+					"at0.0.0.337": {
+						"text": "Stethoscope"
+					},
+					"id0.0.0.1": {
+						"text": "Body Location Precoord"
+					},
+					"id0.0.0.100": {
+						"text": "Units"
+					},
+					"id0.0.0.101": {
+						"text": "Body Location Precoord Value Set"
+					},
+					"id0.0.0.102": {
+						"text": "Body Position Value Set"
+					},
+					"id0.0.0.103": {
+						"text": "Associated Precondition Value Set"
+					},
+					"id0.0.0.104": {
+						"text": "Device Value Set"
+					},
+					"id0.0.0.2": {
+						"text": "Body Position"
+					},
+					"id0.0.0.3": {
+						"text": "Associated Precondition"
+					},
+					"id0.0.0.4": {
+						"text": "Device"
+					},
+					"id1.1.1.1": {
+						"text": "Heart Rate Measurement"
+					}
+				}]
+			}
+		}],
+		"term_bindings": [{
+			"snomed-ct": {
+				"items": [{
+					"id2": "http://snomed.info/id/131195008",
+					"id5.0.3": "http://snomed.info/id/363702006",
+					"id5.0.4": "http://snomed.info/id/246501002",
+					"id5.0.5": "http://snomed.info/id/263490005",
+					"id5.0.6": "http://snomed.info/id/260870009",
+					"id5.0.7": "http://snomed.info/id/363713009",
+					"id5.0.2": "http://loinc.org/id/8867-4",
+					"id0.0.0.100": "http://snomed.info/id/258983007",
+					"id0.0.0.1": "http://snomed.info/id/704327008",
+					"at0.0.0.301": "http://snomed.info/id/368504007",
+					"at0.0.0.302": "http://snomed.info/id/368503001",
+					"at0.0.0.303": "http://snomed.info/id/113263003",
+					"at0.0.0.304": "http://snomed.info/id/65355003",
+					"at0.0.0.305": "http://snomed.info/id/368502006",
+					"at0.0.0.306": "http://snomed.info/id/368501004",
+					"at0.0.0.307": "http://snomed.info/id/181322008",
+					"at0.0.0.308": "http://snomed.info/id/368505008",
+					"at0.0.0.309": "http://snomed.info/id/368506009",
+					"at0.0.0.310": "http://snomed.info/id/69833005",
+					"at0.0.0.311": "http://snomed.info/id/113270003",
+					"at0.0.0.312": "http://snomed.info/id/57832007",
+					"at0.0.0.313": "http://snomed.info/id/25885001",
+					"at0.0.0.314": "http://snomed.info/id/86547008",
+					"at0.0.0.315": "http://snomed.info/id/214811007",
+					"at0.0.0.316": "http://snomed.info/id/214912001",
+					"at0.0.0.317": "http://snomed.info/id/23074001",
+					"at0.0.0.318": "http://snomed.info/id/15672000",
+					"at0.0.0.319": "http://snomed.info/id/13383001",
+					"id0.0.0.2": "http://snomed.info/id/397155001",
+					"at0.0.0.320": "http://snomed.info/id/40199007",
+					"at0.0.0.321": "http://snomed.info/id/33586001",
+					"at0.0.0.322": "http://snomed.info/id/10904000",
+					"id0.0.0.3": "http://snomed.info/id/704326004",
+					"at0.0.0.323": "http://snomed.info/id/255214003",
+					"at0.0.0.324": "http://snomed.info/id/276986009",
+					"at0.0.0.325": "http://snomed.info/id/263678003",
+					"at0.0.0.326": "http://snomed.info/id/307166007",
+					"at0.0.0.327": "http://snomed.info/id/309604004",
+					"at0.0.0.328": "http://snomed.info/id/255566006",
+					"at0.0.0.329": "http://snomed.info/id/255235001",
+					"at0.0.0.330": "http://snomed.info/id/262068006",
+					"at0.0.0.331": "http://snomed.info/id/255410009",
+					"at0.0.0.332": "http://snomed.info/id/262061000",
+					"at0.0.0.333": "http://snomed.info/id/277671009",
+					"at0.0.0.334": "http://snomed.info/id/307159006",
+					"id0.0.0.4": "http://snomed.info/id/424226004",
+					"at0.0.0.335": "http://snomed.info/id/261241001",
+					"at0.0.0.336": "http://snomed.info/id/702527008",
+					"at0.0.0.337": "http://snomed.info/id/53639001"
+				}]
+			}
+		}],
+		"value_sets": [{
+			"ac0.0.0.201": {
+				"id": "ac0.0.0.201",
+				"members": ["at0.0.0.301", "at0.0.0.302", "at0.0.0.303", "at0.0.0.304", "at0.0.0.305", "at0.0.0.306", "at0.0.0.307", "at0.0.0.308", "at0.0.0.309", "at0.0.0.310", "at0.0.0.311", "at0.0.0.312", "at0.0.0.313", "at0.0.0.314", "at0.0.0.315", "at0.0.0.316", "at0.0.0.317", "at0.0.0.318", "at0.0.0.319"]
+			},
+			"ac0.0.0.202": {
+				"id": "ac0.0.0.202",
+				"members": ["at0.0.0.320", "at0.0.0.321", "at0.0.0.322"]
+			},
+			"ac0.0.0.203": {
+				"id": "ac0.0.0.203",
+				"members": ["at0.0.0.323", "at0.0.0.324", "at0.0.0.325", "at0.0.0.326", "at0.0.0.327", "at0.0.0.328", "at0.0.0.329", "at0.0.0.330", "at0.0.0.331", "at0.0.0.332", "at0.0.0.333", "at0.0.0.334"]
+			},
+			"ac0.0.0.204": {
+				"id": "ac0.0.0.204",
+				"members": ["at0.0.0.335", "at0.0.0.336", "at0.0.0.337"]
+			}
+		}]
+	},
+	"adl_version": "2.0.5",
+	"rm_release": "2.0.2",
+	"is_controlled": false,
+	"is_generated": true
+}
