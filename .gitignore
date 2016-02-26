@@ -20,6 +20,9 @@ target/*
 .project
 .classpath
 
+# Jetbrains IDEA
+.idea
+
 # Project-specific
 generated-source/*
 /bin/
