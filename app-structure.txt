@@ -1,33 +1,24 @@
+Components
 
-ModelPatternComponent
-    Pattern
+    Settings - editor specific settings (elements to hide, etc...)
 
-ModelComponent
-    New
-    Load
-    Save - use a directive to make any changes to the dom
+    Pattern Selector - select a CIMI modeling pattern to specialize
 
+    Model Editor - CRUD on CIMI modeling pattern
+        New
+        Load
+        Save - use a directive to make any changes to the dom
 
-internal model state in a service?
-
-ADLService
-    CRUD
-
-FHIRService
-    CRUD
-
+    Model Views - display current CIMI models and newly created models
+        List
+        Tree
+        Mindmap
+        Source
 
 
-ModelEditorComponent
+Services
 
-ModelViewerComponent
-    ModelTreeViewComponent
-    ModelMindmapViewComponent
-    ModelSourceViewComponent
-
-ModelLoaderComponent
-
-
+    Datastore - FHIR based model persistence to backend server?
 
 
 
