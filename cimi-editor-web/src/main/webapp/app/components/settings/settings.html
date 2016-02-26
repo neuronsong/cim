@@ -1,0 +1,9 @@
+<h1>Settings</h1>
+
+<form (ngSubmit)="onSubmit()" #patternForm="ngForm">
+    <div class="form-row">
+    </div>
+    <div class="form-row">
+        <button type="submit" [disabled]="!patternForm.form.valid">Save Changes</button>
+    </div>
+</form>
