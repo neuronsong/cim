@@ -1,1 +1,1 @@
-// TODO: Implement testing for pattern selector service 
+// TODO: Implement testing for pattern selector service

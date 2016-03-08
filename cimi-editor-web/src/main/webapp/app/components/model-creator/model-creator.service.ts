@@ -16,7 +16,7 @@ export class PatternSelectorService {
     // TODO: Get from ServiceCore
     private _serviceUrl = "http://www.google.com";  // URL to web api
 
-    getPatterns () {
+    getPatterns() {
         return [];
 
         // TODO: Enable once services are up
