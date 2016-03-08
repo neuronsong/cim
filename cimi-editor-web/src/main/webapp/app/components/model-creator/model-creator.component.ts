@@ -3,23 +3,19 @@ import {FormBuilder, FORM_DIRECTIVES} from "angular2/common";
 import {CapitalizePipe} from "../pipes/capitalize.pipe";
 
 @Component({
-    selector: "pattern-selector",
+    selector: "model-creator",
     directives: [FORM_DIRECTIVES],
-    templateUrl: "./app/components/pattern-selector/pattern-selector.component.html",
+    templateUrl: "./app/components/model-creator/model-creator.html",
     providers: [FormBuilder],
     pipes: [CapitalizePipe]
 })
 
-export class PatternSelector {
+export class ModelCreator {
 
     payload = null;
     model = {
         pattern: ""
     };
-    
-    // TODO: Load from service
-    patterns = ["observation", "procedure", "assertion"];
-    
     submitted = false;
 
     onSubmit() {

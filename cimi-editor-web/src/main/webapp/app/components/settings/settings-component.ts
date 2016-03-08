@@ -13,45 +13,45 @@ export class SettingsComponent {
 
     private payload = null;
 
-    private model-patterns = ["observation"];
+    private modelPatterns = ["observation"];
 
-    private model-meta-data = {
-    'observation':
+    private modelMetadata = {
+    "observation":
         {
-            'model-name':'observation',
-            'model':'CIMI-CORE-ITEM_GROUP.observation_result.v1.0.0.json',
-            'elements-to-hide':
+            "model-name":"observation",
+            "model":"CIMI-CORE-ITEM_GROUP.observation_result.v1.0.0.json",
+            "elements-to-hide":
                 {
-                    'Subject of information': true,
-                    'Cluster': true,
-                    'Element': true,
-                    'item': true
+                    "Subject of information": true,
+                    "Cluster": true,
+                    "Element": true,
+                    "item": true
                 }
         }
     };
 /*
-    'procedure':
+    "procedure":
         {
-            'model-name':'???',
-            'model':'CIMI-CORE-ITEM_GROUP.???.v1.0.0.json',
-            'elements-to-hide':
+            "model-name":"???",
+            "model":"CIMI-CORE-ITEM_GROUP.???.v1.0.0.json",
+            "elements-to-hide":
                 {
-                    'Subject of information': true,
-                    'Cluster': true,
-                    'Element': true,
-                    'item': true
+                    "Subject of information": true,
+                    "Cluster": true,
+                    "Element": true,
+                    "item": true
                 }
         },
-    'assertion':
+    "assertion":
         {
-            'model-name':'???',
-            'model':'CIMI-CORE-ITEM_GROUP.???.v1.0.0.json',
-            'elements-to-hide':
+            "model-name":"???",
+            "model":"CIMI-CORE-ITEM_GROUP.???.v1.0.0.json",
+            "elements-to-hide":
                 {
-                    'Subject of information': true,
-                    'Cluster': true,
-                    'Element': true,
-                    'item': true
+                    "Subject of information": true,
+                    "Cluster": true,
+                    "Element": true,
+                    "item": true
                 }
         }
     };
