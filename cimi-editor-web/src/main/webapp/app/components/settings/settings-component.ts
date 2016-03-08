@@ -15,10 +15,10 @@ export class SettingsComponent {
 
     private payload = null;
 
-    private show-all-elements = false;
+    private showAllElements = false;
 
     // load from backend
-    private model-meta-data = {
+    private modelMetadata = {
     'observation':
         {
             "model-name":"observation",
@@ -38,7 +38,7 @@ export class SettingsComponent {
     public onSubmit() {
         this.submitted = true;
         // TODO: Store new settings - serialize and store on backend?
-        this.payload = JSON.stringify(this.model-patterns);
+        this.payload = JSON.stringify(this.modelPatterns);
         alert(this.payload);
     }
 }

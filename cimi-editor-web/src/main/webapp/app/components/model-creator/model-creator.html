@@ -1,23 +1,42 @@
-<h1>Model Creator</h1>
+<h3>Model Creator</h3>
 
 <form (ngSubmit)="onSubmit()" #modelForm="ngForm">
-    <div [hidden]="model.valid || model.pristine" class="alert alert-danger" role="alert">
-            Please select a clinical pattern
-        </div>
+    
     <div class="form-group">
         <label for="name">Name for new model</label>
-        <input type="text" class="form-control" required ngControl="name" [(ngModel)="model.name"]>        
+        <input type="text" class="form-control" 
+            required 
+            [(ngModel)]="model.name"
+            ngControl="name"
+            #name="ngForm">
+        <div [hidden]="name.valid || name.pristine" class="alert alert-danger" role="alert">
+            Please enter a model name
+        </div>
     </div>
     <div class="form-group">
-        <label for="name">Terminology binding for new model</label>
-        <input type="text" class="form-control" required ngControl="binding" [(ngModel)="model.binding"]>        
+        <label for="binding">Terminology binding for new model</label>
+        <input type="text" class="form-control" 
+            required
+            [(ngModel)]="model.binding" 
+            ngControl="binding"
+            #binding="ngForm">
+        <div [hidden]="binding.valid || binding.pristine" class="alert alert-danger" role="alert">
+            Please enter a terminology binding
+        </div>
     </div>
     <div class="form-group">
-        <label for="name">Description for new model</label>
-        <textarea type="text" class="form-control" required ngControl="description" [(ngModel)="model.description"]>        
+        <label for="description">Description for new model</label>
+        <input type="text" class="form-control" 
+            required 
+            [(ngModel)]="model.description"
+            ngControl="description" 
+            #description="ngForm">
+        <div [hidden]="description.valid || description.pristine" class="alert alert-danger" role="alert">
+            Please enter a model name
+        </div>
     </div>
     <div class="form-row">
-        <button type="button" (click)="back()">Back</button>
+        <button type="button" (click)="goToPatternSelector()">Back</button>
     </div>
     <div class="form-row">
         <button type="submit" [disabled]="!modelForm.form.valid">Continue</button>
