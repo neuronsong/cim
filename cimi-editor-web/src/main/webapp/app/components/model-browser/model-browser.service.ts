@@ -1,4 +1,4 @@
-// Description: Provides API service layer for the Model Creator feature
+// Description: Provides API service layer for the Model Browser feature
 
 import {Injectable} from "angular2/core";
 import {Http, Response} from "angular2/http";
@@ -9,18 +9,9 @@ import {Observable} from "rxjs/Observable";
 
 
 @Injectable()
-export class ModelCreatorService {
+export class ModelBrowserService {
     constructor (private http: Http) {}
 
-    // Expects stringified JSON object containing the new model
-    storeModel (pattern: string) {
-        // TODO: Link to services
-        // return this.http.post(this._serviceUrl, pattern)
-        //     .map(res => <Pattern[]> res.json().data)
-        //     .catch(this.handleError);
-        localStorage.setItem("cimiModel", pattern);
-    }
-    
     private handleError (error: Response) {
     // TODO: Log error somewhere more permanent
     // TODO: Differentiate between different errors
