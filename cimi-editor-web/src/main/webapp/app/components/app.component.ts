@@ -18,6 +18,7 @@ import {ModelCreator} from "./model-creator/model-creator.component";
     {path: "/model-creator", name: "ModelCreator", component: ModelCreator},
     {path: "/model-editor", name: "ModelEditor", component: ModelEditor},
     {path: "/model-viewer", name: "ModelViewer", component: ModelViewer},
+    {path: "/model-browser", name: "ModelBrowser", component: ModelBrowser},
     {path: "/settings", name: "Settings", component: Settings},
     // TODO: Include other routes
 ])
