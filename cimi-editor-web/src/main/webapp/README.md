@@ -32,3 +32,11 @@ When working with internal scripts, you should edit only files which end in .ts 
 [Node.js](https://nodejs.org/en/)
 
 [npm.js](https://www.npmjs.com)
+   
+[es6-shim.js](https://www.npmjs.com/package/es6-shim)
+
+[angular2-polyfills.js](https://www.npmjs.com/package/angular2-polyfill)
+
+[system.src.js](https://github.com/systemjs/systemjs)
+
+[Rx.js](https://github.com/Reactive-Extensions/RxJS)
