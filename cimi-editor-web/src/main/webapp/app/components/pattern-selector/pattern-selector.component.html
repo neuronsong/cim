@@ -1,16 +1,19 @@
-<h3>Pattern Selector</h3>
-
-<form (ngSubmit)="onSubmit()" #patternForm="ngForm">
-    <div class="form-row">
-        <div [hidden]="pattern.valid || pattern.pristine" class="alert alert-danger" role="alert">
-            Please select a clinical pattern
+<div class="row">
+    <h4>Pattern Selector</h4>
+    <form (ngSubmit)="onSubmit()" #patternForm="ngForm" class="col s12">
+        <div class="row">
+            <div class="input-field col s12"></div> 
+            <div [hidden]="pattern.valid || pattern.pristine" class="alert alert-danger" role="alert">
+                Please select a clinical pattern
+            </div>
+            <label>Select a clinical pattern to specialize</label>
+            <select required [(ngModel)]="model.pattern" ngControl="pattern" #pattern="ngForm" style="display:block;">
+                <option *ngFor="#p of patterns" [value]="p">{{p | capitalize}}</option>
+            </select>
+            
         </div>
-        <div class="formHeading">Select a clinical pattern to specialize</div>
-        <select required [(ngModel)]="model.pattern" ngControl="pattern" #pattern="ngForm">
-            <option *ngFor="#p of patterns" [value]="p">{{p | capitalize}}</option>
-        </select>
-    </div>
-    <div class="form-row">
-        <button type="submit" class="btn btn-lg btn-primary" [disabled]="!patternForm.form.valid">Continue</button>
-    </div>
-</form>
+        <div class="form-row">
+            <button type="submit" class="btn btn-lg btn-primary" [disabled]="!patternForm.form.valid">Continue</button>
+        </div>
+    </form>    
+</div>

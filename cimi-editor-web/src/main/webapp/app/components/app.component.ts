@@ -10,33 +10,27 @@ import {SettingsComponent} from "./settings/settings-component";
 @Component({
     selector: "cimi-editor",
     template: `
-    <div class="container">
-        <nav class="navbar navbar-inverse navbar-fixed-top">
-            <div class="container">
-                <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" [routerLink]="['PatternSelector']">CIMI Editor</a>
+    
+        <div class="navbar-fixed">
+            <nav>
+                <div class="nav-wrapper" style="padding-right:10px; padding-left: 10px;">
+                    <a class="brand-logo" [routerLink]="['PatternSelector']">CIMI Editor</a>
+                    <ul class="right hide-on-med-and-down">
+                        <li><a [routerLink]="['PatternSelector']">Pattern Selector</a></li>
+                        <li><a [routerLink]="['ModelCreator']">Model Creator</a></li>
+                        <li><a [routerLink]="['ModelViewer']">Model Viewer</a></li>
+                        <li><a [routerLink]="['ModelEditor']">Model Editor</a></li>
+                        <li><a [routerLink]="['ModelBrowser']">Model Browser</a></li>
+                        <li><a [routerLink]="['Settings']">Settings</a></li>
+                    </ul>
                 </div>
-                <div id="navbar" class="collapse navbar-collapse">
-                <ul class="nav navbar-nav">
-                    <li><a class="active" [routerLink]="['PatternSelector']">Pattern Selector</a></li>
-                    <li><a [routerLink]="['ModelCreator']">Model Creator</a></li>
-                    <li><a [routerLink]="['ModelViewer']">Model Viewer</a></li>
-                    <li><a [routerLink]="['ModelEditor']">Model Editor</a></li>
-                    <li><a [routerLink]="['ModelBrowser']">Model Browser</a></li>
-                    <li><a [routerLink]="['Settings']">Settings</a></li>
-                </ul>
-                </div><!--/.nav-collapse -->
-            </div>
-        </nav>
-        <router-outlet></router-outlet>
-    </div>
+            </nav>
+        </div>
+        <div class="container">
+            <router-outlet></router-outlet>
+        </div>  
     `,
+    styleUrls:  ["./app/components/app.component.css"],
     directives: [ROUTER_DIRECTIVES]
 })
 @RouteConfig([
