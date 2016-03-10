@@ -30,7 +30,7 @@ import {SettingsComponent} from "./settings/settings-component";
             <router-outlet></router-outlet>
         </div>  
     `,
-    styleUrls:  ["./app/components/app.component.css"],
+    styleUrls:  ["./app/components/app.component.css", "./app/core/main.css", "./app/utilities/utility.css"],
     directives: [ROUTER_DIRECTIVES]
 })
 @RouteConfig([

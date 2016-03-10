@@ -1,0 +1,12 @@
+.validation {
+      
+}
+
+.validation-error {
+    color: #ea454b;
+}
+
+.form-required {
+    font-size: 0.75rem;
+    color: #ea454b;
+}
