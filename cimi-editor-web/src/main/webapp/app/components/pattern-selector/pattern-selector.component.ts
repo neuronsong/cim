@@ -16,7 +16,7 @@ export class PatternSelector {
     model = {
         pattern: ""
     };
-    
+
     // TODO: Load from service
     patterns = ["observation", "procedure", "assertion"];
     

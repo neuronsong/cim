@@ -29,8 +29,8 @@ export class ModelCreator {
         this.payload = JSON.stringify(this.model);
         alert(this.payload);
     }
-    
+
     goToPatternSelector() {
-        this._router.navigate(['PatternSelector']);
+        this._router.navigate(["PatternSelector"]);
     }
 }

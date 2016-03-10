@@ -5,7 +5,7 @@ import {ModelCreator} from "./model-creator/model-creator.component";
 import {ModelEditor} from "./model-editor/model-editor.component";
 import {ModelViewer} from "./model-viewer/model-viewer.component";
 import {ModelBrowser} from "./model-browser/model-browser.component";
-import {SettingsComponent} from "./settings/settings-component";
+import {Settings} from "./settings/settings.component";
 
 @Component({
     selector: "cimi-editor",
@@ -39,7 +39,7 @@ import {SettingsComponent} from "./settings/settings-component";
     {path: "/model-editor", name: "ModelEditor", component: ModelEditor},
     {path: "/model-viewer", name: "ModelViewer", component: ModelViewer},
     {path: "/model-browser", name: "ModelBrowser", component: ModelBrowser},
-    {path: "/settings", name: "Settings", component: SettingsComponent},
+    {path: "/settings", name: "Settings", component: Settings},
     // TODO: Include other routes
 ])
 export class AppComponent { }

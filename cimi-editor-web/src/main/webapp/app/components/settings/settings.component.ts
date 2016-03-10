@@ -10,7 +10,7 @@ import {FormBuilder, FORM_DIRECTIVES} from "angular2/common";
     providers: [FormBuilder]
 })
 
-export class SettingsComponent {
+export class Settings {
     constructor() { }
 
     private payload = null;
@@ -19,7 +19,7 @@ export class SettingsComponent {
 
     // load from backend
     private modelMetadata = {
-    'observation':
+    "observation":
         {
             "model-name":"observation",
             "model":"CIMI-CORE-ITEM_GROUP.observation_result.v1.0.0.json",
