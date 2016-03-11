@@ -7,10 +7,13 @@ import {ModelViewer} from "./model-viewer/model-viewer.component";
 import {ModelBrowser} from "./model-browser/model-browser.component";
 import {Settings} from "./settings/settings.component";
 
+import {PatternSelectorService} from "./pattern-selector/pattern-selector.service";
+import {SettingsService} from "./settings/settings.service";
+
 @Component({
     selector: "cimi-editor",
     template: `
-    
+
         <div class="navbar-fixed">
             <nav>
                 <div class="nav-wrapper" style="padding-right:10px; padding-left: 10px;">
@@ -31,6 +34,7 @@ import {Settings} from "./settings/settings.component";
         </div>  
     `,
     styleUrls:  ["./app/components/app.component.css", "./app/core/main.css", "./app/utilities/utility.css"],
+    providers:  [SettingsService, PatternSelectorService],
     directives: [ROUTER_DIRECTIVES]
 })
 @RouteConfig([

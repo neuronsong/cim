@@ -1,31 +1,32 @@
-import {Component} from "angular2/core";
-import {FormBuilder, FORM_DIRECTIVES} from "angular2/common";
-import {CapitalizePipe} from "../pipes/capitalize.pipe";
+import {Component, OnInit} from "angular2/core";
+import {Pattern, PatternSelectorService}   from "./pattern-selector.service";
+import {Router, RouteParams} from "angular2/router";
 
 @Component({
     selector: "pattern-selector",
-    directives: [FORM_DIRECTIVES],
     templateUrl: "./app/components/pattern-selector/pattern-selector.component.html",
-    providers: [FormBuilder],
-    pipes: [CapitalizePipe]
+    providers: [PatternSelectorService]
 })
 
-export class PatternSelector {
+export class PatternSelector implements OnInit {
+    patterns: Pattern[];
 
-    payload = null;
-    model = {
-        pattern: ""
-    };
+    private _selectedPattern: number;
 
-    // TODO: Load from service
-    patterns = ["observation", "procedure", "assertion"];
+    constructor(
+        private _service: PatternSelectorService,
+        private _router: Router,
+        routeParams: RouteParams) {
+            this._selectedPattern = +routeParams.get("id");
+    }
 
-    submitted = false;
+    isSelected(pattern: Pattern) { return pattern.id === this._selectedPattern; }
 
-    onSubmit() {
-        this.submitted = true;
-        // TODO: Store decision somewhere
-        this.payload = JSON.stringify(this.model.pattern);
-        alert(this.payload);
+    onSelect(pattern: Pattern) {
+        this._router.navigate( ["ModelCreator", { id: pattern.id }] );
+    }
+
+    ngOnInit() {
+        this._service.getPatterns().then(patterns => this.patterns = patterns);
     }
 }

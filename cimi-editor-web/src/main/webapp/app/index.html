@@ -13,7 +13,8 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
       
         <!-- NOTE: Any non-CDN library you wish to add must be added to the gulpfile so it can be copied over to lib -->
-        <link rel="stylesheet" type="text/css" href="app/assets/styles/main.css"
+        <link rel="stylesheet" type="text/css" href="app/assets/styles/main.css">
+
         <!-- IE required polyfills, in this exact order -->
         <script src="lib/es6-shim.min.js"></script>
         <script src="lib/system-polyfills.js"></script>
@@ -32,8 +33,7 @@
                     }
                 }
             });
-            System.import('app/core/main')
-                .then(null, console.error.bind(console));
+            System.import('app/core/main').then(null, console.error.bind(console));
         </script>
     </head>
     <!-- 3. Display the application -->
