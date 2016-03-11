@@ -11,26 +11,12 @@ import {FormBuilder, FORM_DIRECTIVES} from "angular2/common";
 })
 
 export class Settings {
-    constructor() { }
+    //constructor() { };
 
     private payload = null;
 
-    private showAllElements = false;
-
-    // load from backend
-    private modelMetadata = {
-    "observation":
-        {
-            "model-name":"observation",
-            "model":"CIMI-CORE-ITEM_GROUP.observation_result.v1.0.0.json",
-            "elements-to-hide":
-                {
-                    "Subject of information": true,
-                    "Cluster": true,
-                    "Element": true,
-                    "item": true
-                }
-        }
+    private editorSettings = {
+        "showAllElements":false
     };
 
     private  submitted: boolean = false;
@@ -38,7 +24,7 @@ export class Settings {
     public onSubmit() {
         this.submitted = true;
         // TODO: Store new settings - serialize and store on backend?
-        this.payload = JSON.stringify(this.modelPatterns);
+        this.payload = JSON.stringify(this.editorSettings);
         alert(this.payload);
     }
 }

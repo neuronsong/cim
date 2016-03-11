@@ -20,7 +20,7 @@ export class ModelEditorService {
         //     .catch(this.handleError);
         localStorage.setItem("cimiModelFinal", pattern);
     }
-    
+
     private handleError (error: Response) {
     // TODO: Log error somewhere more permanent
     // TODO: Differentiate between different errors

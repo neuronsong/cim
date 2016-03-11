@@ -19,7 +19,7 @@ export class PatternSelector {
 
     // TODO: Load from service
     patterns = ["observation", "procedure", "assertion"];
-    
+
     submitted = false;
 
     onSubmit() {
