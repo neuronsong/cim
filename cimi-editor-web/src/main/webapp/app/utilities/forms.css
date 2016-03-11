@@ -10,3 +10,7 @@
     font-size: 0.75rem;
     color: #ea454b;
 }
+
+[hidden] {
+    opacity: 0;
+}

@@ -7,6 +7,7 @@ import {CapitalizePipe} from "../pipes/capitalize.pipe";
     selector: "model-creator",
     directives: [FORM_DIRECTIVES],
     templateUrl: "./app/components/model-creator/model-creator.html",
+    styleUrls:  ["./app/utilities/forms.css", "./app/utilities/utility.css"],
     providers: [FormBuilder],
     pipes: [CapitalizePipe]
 })
@@ -16,7 +17,7 @@ export class ModelCreator {
     constructor(private _router: Router) {}
 
     payload = null;
-    model = {
+    modelSimple = {
         name: "",
         binding: "",
         description: ""
@@ -26,7 +27,7 @@ export class ModelCreator {
     onSubmit() {
         this.submitted = true;
         // TODO: Store decision somewhere
-        this.payload = JSON.stringify(this.model);
+        this.payload = JSON.stringify(this.modelSimple);
         alert(this.payload);
     }
 

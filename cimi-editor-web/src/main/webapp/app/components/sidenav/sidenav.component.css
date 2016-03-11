@@ -1,0 +1,44 @@
+.sidenav,
+.sidenav-link {
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    -ms-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+}
+
+.sidenav {
+    position: relative;
+    font-size: 1.0em;
+    height: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 1000; /* so the sidenav or its navicon stays above all content */
+    background: #333;
+    color: white;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.sidenav a {
+    text-decoration: none;
+    border: none;
+    padding: 0.6em 0 0.6em 0.6em;
+    color: white;
+    font-size: 1.0em;
+}
+
+.sidenav-selected a {
+    color: #fff;
+}
+
+.sidenav a.sidenav-heading {
+    font-size: 1em;
+    color: #fff;
+    margin: 0;
+}
+
+ a.router-link-active.sidenav-link {
+    font-size: 1.5em;
+}

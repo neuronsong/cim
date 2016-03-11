@@ -1,3 +1,7 @@
 nav li a.router-link-active {
     background-color: #ea454b;
 }
+
+.content {
+    padding: 0 2em;
+}
