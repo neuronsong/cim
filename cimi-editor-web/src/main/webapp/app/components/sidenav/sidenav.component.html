@@ -1,30 +1,80 @@
-<div class="sidenav col-xs-12 container-fluid">
-    <div class="row col-xs-12 container-fluid p-b-20">
-        <a class="sidenav-heading col-xs-12 white" [routerLink]="['PatternSelector']">CIMI Editor</a>
+<div class="sidenav col-xs w-100 container-fluid">
+    <div class="row middle col-xs p-b-20">
+        <a class="sidenav-heading col-xs white" [routerLink]="['PatternSelector']">CIMI Editor</a>
     </div>
 
-    <div>
-        <a class="sidenav-link" [routerLink]="['PatternSelector']">Select pattern</a>
-        <div>
-            Pattern name
-            
+    <div class="row middle col-xs container-fluid p-b-10">
+        <a class="sidenav-link p-l-20" [routerLink]="['PatternSelector']">
+            <i class="fa fa-caret-right" [class.selected]="!isPageDeselected('/pattern-selector')"></i>
+            <span class="m-l-5">SELECT PATTERN</span>
+        </a>
+        <div [hidden]="!pattern">
+            Pattern name   
         </div>
-        
     </div>
-    <div>
-        <a class="sidenav-link" [routerLink]="['ModelCreator']">Edit details</a>
+    <div class="row middle col-xs container-fluid p-b-10">
+        <a class="sidenav-link p-l-20" [routerLink]="['ModelCreator']">
+            <i class="fa fa-caret-right" [class.selected]="!isPageDeselected('/model-creator')"></i>
+            <span class="m-l-5">EDIT DETAILS</span>
+        </a>
+        <div [hidden]="!details">
+            <div>Model Details</div>
+            <div>Name</div>
+            <div>Associated Terminology</div>
+            <div>Description</div>  
+        </div>
     </div>
-    <div>
-        <a class="sidenav-link" [routerLink]="['ModelViewer']">Build model</a>
+    <div class="row middle col-xs container-fluid p-b-10">
+        <a class="sidenav-link p-l-20" [routerLink]="['ModelViewer']">
+            <i class="fa fa-caret-right" [class.selected]="!isPageDeselected('/model-viewer')"></i>
+            <span class="m-l-5">BUILD MODEL</span>
+        </a>
+        <div [hidden]="isPageDeselected('/model-viewer')">
+            <div>Model Build</div>
+            <div>[All those attributes]</div>
+        </div>
     </div>
-    <div>
-        <a class="sidenav-link" [routerLink]="['ModelEditor']">Model Editor</a>
+    <!--<div class="row middle col-xs container-fluid p-b-10">
+        <a class="sidenav-link p-l-20" [routerLink]="['ModelEditor']">
+            <i class="fa fa-caret-right" [class.selected]="!isPageDeselected('/model-editor')"></i>
+            <span class="m-l-5">EDIT MODEL</span>
+        </a>
+        <div [hidden]="isPageDeselected('/model-editor')">
+            Pattern name   
+        </div>
+    </div>-->
+    <div class="row middle col-xs container-fluid p-b-10">
+        <a class="sidenav-link p-l-20" [routerLink]="['ModelBrowser']">
+            <i class="fa fa-caret-right" [class.selected]="!isPageDeselected('/model-browser')"></i>
+            <span class="m-l-5">REVIEW & EXPORT</span>
+        </a>
     </div>
-    <div>
-        <a class="sidenav-link" [routerLink]="['ModelBrowser']">Review & Export</a>
+    <div class="row middle col-xs container-fluid p-b-10">
+        <a class="sidenav-link p-l-20" [routerLink]="['Settings']">
+            <i class="fa fa-caret-right" [class.selected]="!isPageDeselected('/settings')"></i>
+            <span class="m-l-5">SETTINGS</span>
+        </a>
+        <div [hidden]="isPageDeselected('/settings')">
+            <div>User settings</div>
+            <div>Settings</div>   
+        </div>
     </div>
-    <div>
-        <a class="sidenav-link" [routerLink]="['Settings']">Settings</a>
+    
+    
+    <!--<div class="row middle col-xs container-fluid p-b-10">
+        <a class="sidenav-link col-xs" [routerLink]="['ModelCreator']">EDIT DETAILS</a>
     </div>
+    <div class="row middle col-xs container-fluid p-b-10">
+        <a class="sidenav-link col-xs" [routerLink]="['ModelViewer']">BUILD MODEL</a>
+    </div>
+    <div class="row middle col-xs container-fluid p-b-10">
+        <a class="sidenav-link col-xs" [routerLink]="['ModelEditor']">EDIT MODEL</a>
+    </div>
+    <div class="row middle col-xs container-fluid p-b-10">
+        <a class="sidenav-link col-xs" [routerLink]="['ModelBrowser']">REVIEW & EXPORT</a>
+    </div>
+    <div class="row middle col-xs container-fluid p-b-10">
+        <a class="sidenav-link col-xs" [routerLink]="['Settings']">SETTINGS</a>
+    </div>-->
 
 </div>

@@ -1,7 +1,7 @@
 import {Component} from "angular2/core";
 import {FormBuilder, FORM_DIRECTIVES} from "angular2/common";
 import {Router} from "angular2/router";
-import {CapitalizePipe} from "../pipes/capitalize.pipe";
+import {CapitalizePipe} from "../../utilities/pipes/capitalize.pipe";
 
 @Component({
     selector: "model-creator",

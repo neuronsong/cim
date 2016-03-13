@@ -6,7 +6,7 @@ import {ModelEditor} from "./model-editor/model-editor.component";
 import {ModelViewer} from "./model-viewer/model-viewer.component";
 import {ModelBrowser} from "./model-browser/model-browser.component";
 import {Settings} from "./settings/settings.component";
-import {Sidenav} from "./sidenav/sidenav.component";
+import {SidenavComponent} from "./sidenav/sidenav.component";
 
 @Component({
     selector: "cimi-editor",
@@ -19,7 +19,7 @@ import {Sidenav} from "./sidenav/sidenav.component";
         </div>  
     `,
     styleUrls:  ["./app/components/app.component.css", "./app/utilities/utility.css"],
-    directives: [ROUTER_DIRECTIVES, Sidenav]
+    directives: [ROUTER_DIRECTIVES, SidenavComponent]
 })
 @RouteConfig([
     {path: "/pattern-selector", name: "PatternSelector", component: PatternSelector, useAsDefault: true},

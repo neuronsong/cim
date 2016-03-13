@@ -13,9 +13,9 @@ export class ModelViewerService {
     constructor (private http: Http) {}
 
     private handleError (error: Response) {
-    // TODO: Log error somewhere more permanent
-    // TODO: Differentiate between different errors
-    console.error(error);
-    return Observable.throw(error.json().error || "Server error");
+        // TODO: Log error somewhere more permanent
+        // TODO: Differentiate between different errors
+        console.error(error);
+        return Observable.throw(error.json().error || "Server error");
     }
 }

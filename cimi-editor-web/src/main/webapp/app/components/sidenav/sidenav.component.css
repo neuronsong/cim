@@ -19,12 +19,12 @@
     color: white;
     overflow-y: auto;
     -webkit-overflow-scrolling: touch;
+    box-shadow: 0 2px 4px -1px rgba(0, 0, 0, .2), 0 4px 5px 0 rgba(0, 0, 0, .14), 0 1px 10px 0 rgba(0, 0, 0, .12)
 }
 
 .sidenav a {
     text-decoration: none;
     border: none;
-    padding: 0.6em 0 0.6em 0.6em;
     color: white;
     font-size: 1.0em;
 }
@@ -35,10 +35,25 @@
 
 .sidenav a.sidenav-heading {
     font-size: 1em;
+    font-weight: 700;
     color: #fff;
     margin: 0;
+    padding: 0 20px;
+    height: 50px;
+}
+
+.sidenav-link {
+    background: #3f3f46;
+    font-weight: 700;
+    width: 100%;
+    padding: 10px 10px;
+    box-shadow: 0 2px 4px -1px rgba(0, 0, 0, .2), 0 4px 5px 0 rgba(0, 0, 0, .14), 0 1px 10px 0 rgba(0, 0, 0, .12)
 }
 
  a.router-link-active.sidenav-link {
     font-size: 1.5em;
+}
+
+.selected {
+    transform: rotateZ(45deg);
 }
