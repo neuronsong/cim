@@ -5,9 +5,10 @@ import {CapitalizePipe} from "../../utilities/pipes/capitalize.pipe";
 @Component({
     selector: "pattern-selector",
     directives: [FORM_DIRECTIVES],
-    templateUrl: "./app/components/pattern-selector/pattern-selector.component.html",
     providers: [FormBuilder],
-    pipes: [CapitalizePipe]
+    pipes: [CapitalizePipe],
+    templateUrl: "./app/components/pattern-selector/pattern-selector.component.html",
+    styleUrls:  ["./app/utilities/forms.css", "./app/utilities/utility.css"],
 })
 
 export class PatternSelector {

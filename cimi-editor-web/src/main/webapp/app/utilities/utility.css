@@ -99,12 +99,13 @@ The purpose of this stylesheet is to shorthand and manage common inline styles
 .white { color: #FFFFFF !important; }
 .green{ color: #4CAF50 !important; }
 .red{ color: #F44336 !important; }
-.yellow{ color:#FFEB3B !important; }
+.yellow{ color:#FFDB00 !important; }
 .dark-blue { color: #304354 !important; }
 .blue { color: #7991a7 !important; }
 .amber { color: #FFC107 !important; }
 .orange { color: #f58b2e !important}
 .gray { color: rgba(0, 0, 0, 0.6) !important; }
+.dark-gray { color: #262424 !important; }
 .dark-red { color: #B71C1C !important; }
 .blue-gray { color: #7491ab !important; }
 .blue-gray-mid { color: #98adc4 !important; }
@@ -113,7 +114,7 @@ The purpose of this stylesheet is to shorthand and manage common inline styles
 
 .bg-green { background-color: #4CAF50 !important; }
 .bg-red { background-color: #F44336 !important; }
-.bg-yellow { background-color:#FFEB3B !important; }
+.bg-yellow { background-color:#FFDB00 !important; }
 .bg-dark-blue { background-color: #304354 !important; }
 .bg-blue { background-color: #7991a7 !important; }
 .bg-orange { background-color:#f58b2e !important; }
@@ -244,6 +245,10 @@ The purpose of this stylesheet is to shorthand and manage common inline styles
     margin: 0;
     padding-left: 0;
     list-style: none!important;
+}
+
+[hidden] {
+    opacity: 0;
 }
 
 .opacity-5 {

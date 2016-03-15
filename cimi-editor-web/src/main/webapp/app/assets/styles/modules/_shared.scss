@@ -24,7 +24,7 @@ html, body {
 
 body {
     background-size: 100% 100%;
-    color: #d4d4d4;
+    color: #fff;
     -ms-overflow-style: scrollbar;
     font-family: inherit;
 }
@@ -111,9 +111,9 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     min-height: 36px;
     background: 0 0;
     white-space: nowrap;
-    min-width: 88px;
+    min-width: 120px;
     text-align: center;
-    font-weight: 500;
+    font-weight: 700;
     font-size: 14px;
     font-style: inherit;
     font-variant: inherit;
@@ -151,6 +151,16 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     line-height: 1.846153846;
     vertical-align: top;
     border-top: 1px solid rgba(189, 193, 193, 0.2);
+}
+
+.headline {
+    font-size: 3em;
+    font-weight: 300;
+    color: #fff;
+    margin: 0;
+    padding-top: 15px;
+    padding-bottom: 30px;
+    line-height: 1em;
 }
 
 /*Overwrites*/

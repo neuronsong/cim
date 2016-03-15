@@ -33,8 +33,7 @@ export class StateService {
     getState () {
         // TODO: Implement for real
 
-        // This is a sample, simplified JSON representation of the various model states
-        return Promise.resolve({
+        let model = {
             pattern : {
                 name: "Observation"
             },
@@ -45,7 +44,7 @@ export class StateService {
             },
             model: {
                 identifier: {
-                    value: "1",
+                    value: "001",
                     cardinality: ["0","*"],
                     constraints: []
                 },
@@ -69,8 +68,13 @@ export class StateService {
                     cardinality: ["0", "*"],
                     constraints: []
                 }
-            }    
-        });
+            }
+        };
+
+        alert(model);
+
+        // This is a sample, simplified JSON representation of the various model states
+        return Promise.resolve(model);
 
         // return JSON.parse(localStorage.getItem('cimi'));
     }  

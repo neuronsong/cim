@@ -25,7 +25,6 @@ export class SidenavComponent implements OnInit {
     }
     
     ngOnInit() {
-        this.getState();
     }
 
 }
