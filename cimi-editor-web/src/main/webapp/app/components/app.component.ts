@@ -8,6 +8,9 @@ import {ModelBrowser} from "./model-browser/model-browser.component";
 import {Settings} from "./settings/settings.component";
 import {SidenavComponent} from "./sidenav/sidenav.component";
 
+import {PatternSelectorService} from "./pattern-selector/pattern-selector.service";
+import {SettingsService} from "./settings/settings.service";
+
 @Component({
     selector: "cimi-editor",
     template: `
