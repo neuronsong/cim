@@ -1,55 +1,59 @@
-<h4>Model Creator</h4>
+<div class="headline">Customize model details</div>
 
 <form (ngSubmit)="onSubmit()" #modelForm="ngForm">
     <div class="row">
-        <div class="input-field col s6">
-            <input type="text" id="name" class="form-control" 
+        <div class="col-sm col-md-4">
+            <label for="name">Name for new model *</label>
+        </div>
+        <div class="col-sm">
+            <input type="text" id="name" class="" 
                 required 
                 [(ngModel)]="modelSimple.name"
                 ngControl="name"
                 #name="ngForm">
-            <label for="name">Name for new model *</label>
-            <div [hidden]="name.valid || name.pristine" class="validation validation-error" role="alert">
-            Please enter a model name
-            </div>    
+            <span [hidden]="name.valid || name.pristine" class="validation validation-error m-l-10" role="alert">
+                Please enter a model name
+            </span>
         </div>
     </div>
-    <div class="row">
-        <div class="input-field col s6">
-            <input type="text" id="binding" class="form-control" 
+    <div class="row p-t-10">
+        <div class="col-sm col-md-4">
+            <label for="binding">Terminology binding for new model (optional)</label>
+        </div>
+        <div class="col-sm">
+            <input type="text" id="binding" class="" 
                 [(ngModel)]="modelSimple.binding" 
                 ngControl="binding"
                 #binding="ngForm">
-            <label for="binding">Terminology binding for new model (optional)</label>
-            <div [hidden]="binding.valid || binding.pristine" class="validation validation-error" role="alert">
+            <span [hidden]="binding.valid || binding.pristine" class="validation validation-error m-l-10" role="alert">
                 Please enter a terminology binding
-            </div>
+            </span>
         </div>
     </div>
-   <div class="row">
-        <div class="input-field col s6">
+   <div class="row p-t-10">
+       <div class="col-sm col-md-4">
+            <label for="description">Description for new model *</label>
+        </div>
+        <div class="col-sm">
             <input type="text" id="description" class="form-control" 
                 required 
                 [(ngModel)]="modelSimple.description"
                 ngControl="description" 
                 #description="ngForm">
-            <label for="description">Description for new model *</label>
-            <div [hidden]="description.valid || description.pristine" class="validation validation-error" role="alert">
-                Please enter a model name
-            </div>
+            <span [hidden]="description.valid || description.pristine" class="validation validation-error m-l-10" role="alert">
+                Please enter a model description
+            </span>
         </div>
     </div> 
-    <div class="row">
-        <div class="col s12">
-            <span class="form-required">* Required</span>    
-        </div>
+    <div class="p-t-10 p-b-10">
+        <span class="form-required">* Required</span>    
     </div>
     <div class="row">
-        <div class="col s3">
-            <button type="button" class="btn btn-lg btn-default bg-gray" (click)="goToPatternSelector()">Back</button>    
+        <div class="col-sm col-md-4">
+            <button type="button" class="btn btn-push bg-dark-gray yellow" (click)="goToPatternSelector()">Back</button>    
         </div>
-        <div class="col s3">
-            <button type="submit" class="btn btn-lg btn-primary" [hidden]="!modelForm.form.valid">Continue</button>    
+        <div class="col-sm col-md-4">
+            <button type="submit" class="btn btn-push bg-yellow dark-gray" [hidden]="!modelForm.form.valid">Continue</button>    
         </div>
     </div>
 </form>

@@ -14,12 +14,14 @@ import {SettingsService} from "./settings/settings.service";
 @Component({
     selector: "cimi-editor",
     template: `
-        <div class="row">
-            <sidenav class="col-lg-3 col-md-4 col-sm-6 row"></sidenav>
-            <div class="content col-lg-9 col-md-8 col-sm-6">
-                <router-outlet></router-outlet>
-            </div>   
-        </div>  
+        <div>
+            <div class="row">
+                <sidenav class="col-lg-3 col-md-4 col-sm-6 row"></sidenav>
+                <div class="content col-lg-9 col-md-8 col-sm-6">
+                    <router-outlet></router-outlet>
+                </div>   
+            </div>
+        </div>
     `,
     styleUrls:  ["./app/components/app.component.css", "./app/utilities/utility.css"],
     directives: [ROUTER_DIRECTIVES, SidenavComponent]

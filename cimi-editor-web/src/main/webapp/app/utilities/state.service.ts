@@ -24,6 +24,9 @@ export class StateService {
         else if (stateType === "model") {
             cimiStorage.model = stateValue;    
         }
+        else if (stateType === "settings") {
+            cimiStorage.settings = stateValue;    
+        }
         
         localStorage.setItem("cimi", JSON.stringify(cimiStorage));
         return;
