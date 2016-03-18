@@ -13,25 +13,22 @@ export class StateService {
     // stateValue: Object representation of collection for each stateType (e.g., pattern, for pattern selection)
     updateState (stateType: String, stateValue: Object) {
 
-        let cimiStorage = JSON.parse(localStorage.getItem('cimi'));
+        let cimiStorage = JSON.parse(localStorage.getItem("cimi"));
 
         if (stateType === "pattern") {
             cimiStorage.pattern = stateValue;
+        } else if (stateType === "details") {
+            cimiStorage.details = stateValue;
+        } else if (stateType === "model") {
+            cimiStorage.model = stateValue;
+        } else if (stateType === "settings") {
+            cimiStorage.settings = stateValue;
         }
-        else if (stateType === "details") {
-            cimiStorage.details = stateValue;    
-        }
-        else if (stateType === "model") {
-            cimiStorage.model = stateValue;    
-        }
-        else if (stateType === "settings") {
-            cimiStorage.settings = stateValue;    
-        }
-        
+
         localStorage.setItem("cimi", JSON.stringify(cimiStorage));
         return;
     }
-    
+
     // Gets the browser's app state
     getState () {
         // TODO: Implement for real
@@ -80,5 +77,5 @@ export class StateService {
         return Promise.resolve(model);
 
         // return JSON.parse(localStorage.getItem('cimi'));
-    }  
+    }
 }

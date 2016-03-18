@@ -13,11 +13,11 @@ import {Router, RouteParams} from "angular2/router";
     styleUrls:  ["./app/utilities/forms.css", "./app/utilities/utility.css"]
 })
 export class PatternSelector implements OnInit {
-    
+
     patterns: Pattern[];
     private _selectedPattern: number;
     submitted = false;
-    
+
     constructor(
         private _service: PatternSelectorService,
         private _router: Router,
