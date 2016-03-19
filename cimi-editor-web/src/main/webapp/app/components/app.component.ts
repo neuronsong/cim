@@ -1,9 +1,9 @@
 import {Component} from "angular2/core";
 import {RouteConfig, ROUTER_DIRECTIVES} from "angular2/router";
 import {PatternSelector} from "./pattern-selector/pattern-selector.component";
-import {ModelCreator} from "./model-creator/model-creator.component";
-import {ModelEditor} from "./model-editor/model-editor.component";
-import {ModelViewer} from "./model-viewer/model-viewer.component";
+import {ModelDetailer} from "./model-detailer/model-detailer.component";
+import {ModelBuilder} from "./model-builder/model-builder.component";
+import {ModelExporter} from "./model-exporter/model-exporter.component";
 import {ModelBrowser} from "./model-browser/model-browser.component";
 import {Settings} from "./settings/settings.component";
 import {SidenavComponent} from "./sidenav/sidenav.component";
@@ -28,9 +28,9 @@ import {SettingsService} from "./settings/settings.service";
 })
 @RouteConfig([
     {path: "/pattern-selector", name: "PatternSelector", component: PatternSelector, useAsDefault: true},
-    {path: "/model-creator", name: "ModelCreator", component: ModelCreator},
-    {path: "/model-editor", name: "ModelEditor", component: ModelEditor},
-    {path: "/model-viewer", name: "ModelViewer", component: ModelViewer},
+    {path: "/model-detailer", name: "ModelDetailer", component: ModelDetailer},
+    {path: "/model-builder", name: "ModelBuilder", component: ModelBuilder},
+    {path: "/model-exporter", name: "ModelExporter", component: ModelExporter},
     {path: "/model-browser", name: "ModelBrowser", component: ModelBrowser},
     {path: "/settings", name: "Settings", component: Settings},
     // TODO: Include other routes

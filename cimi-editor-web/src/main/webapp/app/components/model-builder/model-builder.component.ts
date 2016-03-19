@@ -3,14 +3,14 @@ import {FormBuilder, FORM_DIRECTIVES} from "angular2/common";
 import {CapitalizePipe} from "../../utilities/pipes/capitalize.pipe";
 
 @Component({
-    selector: "model-viewer",
+    selector: "model-builder",
     directives: [FORM_DIRECTIVES],
-    templateUrl: "./app/components/model-creator/model-viewer.html",
+    templateUrl: "./app/components/model-builder/model-builder.html",
     providers: [FormBuilder],
     pipes: [CapitalizePipe]
 })
 
-export class ModelViewer {
+export class ModelBuilder {
 
     payload = null;
     model = {

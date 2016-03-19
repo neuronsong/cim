@@ -1,4 +1,4 @@
-// Description: Provides API service layer for the Model Editor feature
+// Description: Provides API service layer for the Model Detailer feature
 
 import {Injectable} from "angular2/core";
 import {Http, Response} from "angular2/http";
@@ -9,7 +9,7 @@ import {Observable} from "rxjs/Observable";
 
 
 @Injectable()
-export class ModelEditorService {
+export class ModelDetailerService {
     constructor (private http: Http) {}
 
     // Expects stringified JSON object containing the new model
@@ -18,7 +18,7 @@ export class ModelEditorService {
         // return this.http.post(this._serviceUrl, pattern)
         //     .map(res => <Pattern[]> res.json().data)
         //     .catch(this.handleError);
-        localStorage.setItem("cimiModelFinal", pattern);
+        localStorage.setItem("cimiModel", pattern);
     }
 
     private handleError (error: Response) {

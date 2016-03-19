@@ -12,7 +12,7 @@
         </div>
     </div>
     <div class="row middle col-xs container-fluid p-b-10">
-        <a class="sidenav-link p-l-20" [class.link-active]="!isPageDeselected('/model-creator')" [routerLink]="['ModelCreator']">
+        <a class="sidenav-link p-l-20" [class.link-active]="!isPageDeselected('/model-detailer')" [routerLink]="['ModelDetailer']">
             <i class="fa fa-caret-right"></i>
             <span class="m-l-5">EDIT DETAILS</span>
         </a>
@@ -24,26 +24,17 @@
         </div>
     </div>
     <div class="row middle col-xs container-fluid p-b-10">
-        <a class="sidenav-link p-l-20" [class.link-active]="!isPageDeselected('/model-viewer')" [routerLink]="['ModelViewer']">
+        <a class="sidenav-link p-l-20" [class.link-active]="!isPageDeselected('/model-builder')" [routerLink]="['ModelBuilder']">
             <i class="fa fa-caret-right"></i>
             <span class="m-l-5">BUILD MODEL</span>
         </a>
-        <div [hidden]="isPageDeselected('/model-viewer')">
+        <div [hidden]="isPageDeselected('/model-builder')">
             <div>Model Build</div>
             <div>[All those attributes]</div>
         </div>
     </div>
-    <!--<div class="row middle col-xs container-fluid p-b-10">
-        <a class="sidenav-link p-l-20" [routerLink]="['ModelEditor']">
-            <i class="fa fa-caret-right" [class.selected]="!isPageDeselected('/model-editor')"></i>
-            <span class="m-l-5">EDIT MODEL</span>
-        </a>
-        <div [hidden]="isPageDeselected('/model-editor')">
-            Pattern name   
-        </div>
-    </div>-->
     <div class="row middle col-xs container-fluid p-b-10">
-        <a class="sidenav-link p-l-20" [class.link-active]="!isPageDeselected('/model-browser')" [routerLink]="['ModelBrowser']">
+        <a class="sidenav-link p-l-20" [class.link-active]="!isPageDeselected('/model-exporter')" [routerLink]="['ModelExporter']">
             <i class="fa fa-caret-right"></i>
             <span class="m-l-5">REVIEW & EXPORT</span>
         </a>

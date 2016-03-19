@@ -4,15 +4,15 @@ import {Router} from "angular2/router";
 import {CapitalizePipe} from "../../utilities/pipes/capitalize.pipe";
 
 @Component({
-    selector: "model-creator",
+    selector: "model-detailer",
     directives: [FORM_DIRECTIVES],
-    templateUrl: "./app/components/model-creator/model-creator.html",
+    templateUrl: "./app/components/model-detailer/model-detailer.html",
     styleUrls:  ["./app/utilities/forms.css", "./app/utilities/utility.css"],
     providers: [FormBuilder],
     pipes: [CapitalizePipe]
 })
 
-export class ModelCreator {
+export class ModelDetailer {
 
     constructor(private _router: Router) {}
 
