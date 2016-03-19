@@ -1,7 +1,7 @@
 import {Component, OnInit} from "angular2/core";
 import {FormBuilder, FORM_DIRECTIVES} from "angular2/common";
 import {CapitalizePipe} from "../../utilities/pipes/capitalize.pipe";
-import {Pattern, PatternSelectorService}   from "./pattern-selector.service";
+import {Pattern, PatternSelectorService} from "./pattern-selector.service";
 import {Router, RouteParams} from "angular2/router";
 
 @Component({
