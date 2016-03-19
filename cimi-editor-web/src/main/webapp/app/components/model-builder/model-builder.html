@@ -1,6 +1,22 @@
-<h1>Model Builder</h1>
+<div class="headline">Model Builder</div>
+<h4>Customize and augment your model according to your needs</h4>
 
 <form (ngSubmit)="onSubmit()" #modelForm="ngForm">
+    
+    <div class="row">
+        <div class="col-sm-2"><strong>Element</strong></div>
+        <div class="col-sm-1"><strong>Constrain out</strong></div>
+        <div class="col-sm-1"><strong>Cardinality</strong></div>
+        <div class="col-sm-2"><strong>Constraints</strong></div>
+        <div class="col-sm font-weight-700"><strong>Terminology Binding</strong></div>
+    </div>
+    <div class="row" *ngFor="#element of elements">
+        <div class="col-sm-2">{{element.type}}</div>
+        <div class="col-sm-2">{{element.isConstrained}}</div>
+        <div class="col-sm-2">{{element.cardinality}}</div>
+        <div class="col-sm-2">{{element.constraints}}</div>
+        <div class="col-sm">{{element.terminologyBindings}}</div>
+    </div>
     <div [hidden]="model.valid || model.pristine" class="alert alert-danger" role="alert">
     </div>
 </form>

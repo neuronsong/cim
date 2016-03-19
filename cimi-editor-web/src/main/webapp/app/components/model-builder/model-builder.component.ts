@@ -17,6 +17,9 @@ export class ModelBuilder {
         modelFinal: ""
     };
     submitted = false;
+    
+    // TODO: Insert mock data
+    elements = [];
 
     onSubmit() {
         this.submitted = true;

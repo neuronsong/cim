@@ -28,7 +28,7 @@ export class PatternSelector implements OnInit {
     isSelected(pattern: Pattern) { return pattern.id === this._selectedPattern; }
 
     onSelect(pattern: Pattern) {
-        this._router.navigate( ["ModelCreator", { id: pattern.id }] );
+        this._router.navigate( ["ModelDetailer", { id: pattern.id }] );
     }
 
     ngOnInit() {
