@@ -121,7 +121,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     text-decoration: none;
     cursor: pointer;
     overflow: hidden;
-    /*transition: box-shadow .4s cubic-bezier(.25,.8,.25,1),background-color .4s cubic-bezier(.25,.8,.25,1);*/
+    transition: opacity .25s ease-out;
 }
 
 .btn-push:active{
@@ -166,6 +166,43 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 button, input, optgroup, select, textarea {
     color: #262626;
 }
+
+/* filetree */
+.filetree {
+    padding: 12px 24px;
+    font-size: 12px;
+}
+
+.filetree .file {
+    display: block;
+    font-family: Monaco, "Lucida Console", monospace;
+    line-height: 32px;
+    color: #FFC107;    
+}
+
+.filetree .children {
+    padding-left: 24px;
+    position: relative;
+    overflow: hidden;
+}
+
+.filetree .children .file {
+    position: relative;
+}
+
+.filetree .children .file:before{
+    content: '';
+    left: -18px;
+    bottom: 16px;
+    width: 12px;
+    height: 9999px;
+    position: absolute;
+    border-width: 0 0 2px 2px;
+    border-style: solid;
+    border-color: #FFC107;
+    border-radius: 0 0 0 3px
+}
+
 
 /*Overwrites*/
 

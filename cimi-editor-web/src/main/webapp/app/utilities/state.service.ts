@@ -71,8 +71,6 @@ export class StateService {
             }
         };
 
-        alert(model);
-
         // This is a sample, simplified JSON representation of the various model states
         return Promise.resolve(model);
 

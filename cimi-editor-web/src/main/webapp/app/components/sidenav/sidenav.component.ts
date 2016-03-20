@@ -11,21 +11,27 @@ import {StateService} from "../../utilities/state.service";
 })
 export class SidenavComponent implements OnInit {
 
-    state = null;
+    state: Object;
+    // pattern = null;
+    // details = null;
+    // model = null;
+
 
     constructor(private _location: Location, private _stateService: StateService) { }
 
-    isPageDeselected(path) {
-        console.log("Comparing this path: " + path + "\nCurrent location: " + this._location.path() + "\nMatches: " + (this._location.path().indexOf(path) !== -1).toString() );
-        return this._location.path().indexOf(path) === -1;
+    isPageSelected(path) {
+        return this._location.path().indexOf(path) !== -1;
     }
 
     getState() {
         this._stateService.getState().then(state => this.state = state);
-        //console.log(this.state);
+        // this.pattern = this.state.pattern;
+        // this.details = this.state.details;
+        // this.model = this.state.model;
     }
 
     ngOnInit() {
+        this.getState();
     }
 
 }

@@ -3,48 +3,65 @@
         <a class="sidenav-heading middle col-xs white" [routerLink]="['PatternSelector']">CIMI Editor</a>
     </div>
     <div class="row middle col-xs container-fluid p-b-10">
-        <a class="sidenav-link p-l-20" [class.link-active]="!isPageDeselected('/pattern-selector')" [routerLink]="['PatternSelector']">
+        <a class="sidenav-link p-l-20" [class.link-active]="isPageSelected('/pattern-selector')" [routerLink]="['PatternSelector']">
             <i class="fa fa-caret-right"></i>
             <span class="m-l-5">SELECT PATTERN</span>
         </a>
-        <div [hidden]="!pattern">
-            Pattern name   
+        <div *ngIf="state" class="col-xs" [hidden]="isPageSelected('/pattern-selector')">
+            <div class="padding-15 filetree">
+                <div class="file"><strong>Pattern</strong></div>
+                <div class="children">
+                    <div class="file">Name: {{state.pattern.name}}</div>
+                </div>
+            </div>
         </div>
     </div>
     <div class="row middle col-xs container-fluid p-b-10">
-        <a class="sidenav-link p-l-20" [class.link-active]="!isPageDeselected('/model-detailer')" [routerLink]="['ModelDetailer']">
+        <a class="sidenav-link p-l-20" [class.link-active]="isPageSelected('/model-detailer')" [routerLink]="['ModelDetailer']">
             <i class="fa fa-caret-right"></i>
-            <span class="m-l-5">EDIT DETAILS</span>
+            <span class="m-l-5">CUSTOMIZE DETAILS</span>
         </a>
-        <div [hidden]="!details">
-            <div>Model Details</div>
-            <div>Name</div>
-            <div>Associated Terminology</div>
-            <div>Description</div>  
+        <div *ngIf="state" class="col-xs" [hidden]="isPageSelected('/model-detailer')">
+            <div class="padding-15 filetree">
+                <div class="file"><strong>Details</strong></div>
+                <div class="children">
+                    <div class="file">Name: {{state.details.name}}</div>
+                    <div class="file">Terminology: {{state.details.terminology}}</div>
+                    <div class="file">Description: {{state.details.description}}</div>
+                </div>
+            </div>
         </div>
     </div>
     <div class="row middle col-xs container-fluid p-b-10">
-        <a class="sidenav-link p-l-20" [class.link-active]="!isPageDeselected('/model-builder')" [routerLink]="['ModelBuilder']">
+        <a class="sidenav-link p-l-20" [class.link-active]="isPageSelected('/model-builder')" [routerLink]="['ModelBuilder']">
             <i class="fa fa-caret-right"></i>
             <span class="m-l-5">BUILD MODEL</span>
         </a>
-        <div [hidden]="isPageDeselected('/model-builder')">
-            <div>Model Build</div>
-            <div>[All those attributes]</div>
+        <div *ngIf="state" class="col-xs" [hidden]="isPageSelected('/model-builder')">
+            <div class="padding-15 filetree">
+                <div class="file"><strong>Elements</strong></div>
+                <div class="children">
+                    <div class="file">Identifier: {{state.model.identifier.value}}</div>
+                    <div class="file">Code: {{state.model.code.value}}</div>
+                    <div class="file">Reason: {{state.model.reason.value}}</div>
+                    <div class="file">Method: {{state.model.method.value}}</div>
+                    <div class="file">Status: {{state.model.status.value}}</div>
+                </div>
+            </div>
         </div>
     </div>
     <div class="row middle col-xs container-fluid p-b-10">
-        <a class="sidenav-link p-l-20" [class.link-active]="!isPageDeselected('/model-exporter')" [routerLink]="['ModelExporter']">
+        <a class="sidenav-link p-l-20" [class.link-active]="isPageSelected('/model-exporter')" [routerLink]="['ModelExporter']">
             <i class="fa fa-caret-right"></i>
             <span class="m-l-5">REVIEW & EXPORT</span>
         </a>
     </div>
     <div class="row middle col-xs container-fluid p-b-10">
-        <a class="sidenav-link p-l-20" [class.link-active]="!isPageDeselected('/settings')" [routerLink]="['Settings']">
+        <a class="sidenav-link p-l-20" [class.link-active]="isPageSelected('/settings')" [routerLink]="['Settings']">
             <i class="fa fa-caret-right"></i>
             <span class="m-l-5">SETTINGS</span>
         </a>
-        <div [hidden]="isPageDeselected('/settings')">
+        <div [hidden]="!isPageSelected('/settings')">
             <div>User settings</div>
             <div>Settings</div>   
         </div>
