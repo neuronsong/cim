@@ -6,7 +6,7 @@
             <label for="name">Name for new model *</label>
         </div>
         <div class="col-sm">
-            <input type="text" id="name" class="" 
+            <input type="text" id="name" class="input" 
                 required 
                 [(ngModel)]="modelSimple.name"
                 ngControl="name"
@@ -21,7 +21,7 @@
             <label for="binding">Terminology binding for new model (optional)</label>
         </div>
         <div class="col-sm">
-            <input type="text" id="binding" class="" 
+            <input type="text" id="binding" class="input" 
                 [(ngModel)]="modelSimple.binding" 
                 ngControl="binding"
                 #binding="ngForm">
@@ -35,7 +35,7 @@
             <label for="description">Description for new model *</label>
         </div>
         <div class="col-sm">
-            <input type="text" id="description" class="form-control" 
+            <input type="text" id="description" class="input" 
                 required 
                 [(ngModel)]="modelSimple.description"
                 ngControl="description" 

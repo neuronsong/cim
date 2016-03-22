@@ -27,6 +27,7 @@ body {
     color: #fff;
     -ms-overflow-style: scrollbar;
     font-family: inherit;
+    margin: 0;
 }
 
 a {
@@ -169,15 +170,14 @@ button, input, optgroup, select, textarea {
 
 /* filetree */
 .filetree {
-    padding: 12px 24px;
-    font-size: 12px;
+    font-size: 0.75em;
 }
 
 .filetree .file {
     display: block;
     font-family: Monaco, "Lucida Console", monospace;
     line-height: 32px;
-    color: #FFC107;    
+    color: #FFDB00; 
 }
 
 .filetree .children {
@@ -197,10 +197,24 @@ button, input, optgroup, select, textarea {
     width: 12px;
     height: 9999px;
     position: absolute;
-    border-width: 0 0 2px 2px;
+    border-width: 0 0 1px 1px;
     border-style: solid;
-    border-color: #FFC107;
+    border-color: #FFDB00;
     border-radius: 0 0 0 3px
+}
+
+input {
+    background-color: #1e1e1e;
+    color: white;
+    border: 2px solid #FFDB00;
+    border-radius: 5px;
+    min-height: 2.0em;
+    font-size: 1.0em;
+    padding: 5px;
+}
+
+input:focus {
+    outline: 4px solid #FFDB00;
 }
 
 

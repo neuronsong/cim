@@ -3,6 +3,7 @@
 import {Injectable} from "angular2/core";
 //import {Http, Response} from "angular2/http";
 import {Observable} from "rxjs/Observable";
+import {STATE} from "./mock-state";
 
 @Injectable()
 export class StateService {
@@ -33,46 +34,8 @@ export class StateService {
     getState () {
         // TODO: Implement for real
 
-        let model = {
-            pattern : {
-                name: "Observation"
-            },
-            details: {
-                name: "Special Observation",
-                binding: "Some SNOMED code",
-                description: "This is a special observation"
-            },
-            model: {
-                identifier: {
-                    value: "001",
-                    cardinality: ["0","*"],
-                    constraints: []
-                },
-                code: {
-                    value: "social-history",
-                    cardinality: ["1","*"],
-                    constraints: []
-                },
-                reason: {
-                    value: "Some reason",
-                    cardinality: ["0", "*"],
-                    constraints: []
-                },
-                method: {
-                    value: "How it was done",
-                    cardinality: ["0", "*"],
-                    constraints: []
-                },
-                status: {
-                    value: "registered",
-                    cardinality: ["0", "*"],
-                    constraints: []
-                }
-            }
-        };
-
         // This is a sample, simplified JSON representation of the various model states
-        return Promise.resolve(model);
+        return Promise.resolve(STATE);
 
         // return JSON.parse(localStorage.getItem('cimi'));
     }

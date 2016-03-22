@@ -8,7 +8,7 @@
             <span class="m-l-5">SELECT PATTERN</span>
         </a>
         <div *ngIf="state" class="col-xs" [hidden]="isPageSelected('/pattern-selector')">
-            <div class="padding-15 filetree">
+            <div class="filetree">
                 <div class="file"><strong>Pattern</strong></div>
                 <div class="children">
                     <div class="file">Name: {{state.pattern.name}}</div>
@@ -22,7 +22,7 @@
             <span class="m-l-5">CUSTOMIZE DETAILS</span>
         </a>
         <div *ngIf="state" class="col-xs" [hidden]="isPageSelected('/model-detailer')">
-            <div class="padding-15 filetree">
+            <div class="filetree">
                 <div class="file"><strong>Details</strong></div>
                 <div class="children">
                     <div class="file">Name: {{state.details.name}}</div>
@@ -38,7 +38,7 @@
             <span class="m-l-5">BUILD MODEL</span>
         </a>
         <div *ngIf="state" class="col-xs" [hidden]="isPageSelected('/model-builder')">
-            <div class="padding-15 filetree">
+            <div class="filetree">
                 <div class="file"><strong>Elements</strong></div>
                 <div class="children">
                     <div class="file">Identifier: {{state.model.identifier.value}}</div>
@@ -61,10 +61,6 @@
             <i class="fa fa-caret-right"></i>
             <span class="m-l-5">SETTINGS</span>
         </a>
-        <div [hidden]="!isPageSelected('/settings')">
-            <div>User settings</div>
-            <div>Settings</div>   
-        </div>
     </div>
 
 </div>
