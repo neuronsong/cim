@@ -12,7 +12,7 @@ import {CapitalizePipe} from "../../utilities/pipes/capitalize.pipe";
 
 export class ModelExporter {
 
-    payload = null;
+    payload: Object;
     model = {
         modelFinal: ""
     };

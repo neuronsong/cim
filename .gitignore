@@ -35,18 +35,5 @@ generated-source/*
 
 # npm packages
 node_modules/
-# Outputted webapp
-dist/
-*.map
 
-*.map
 
-*.js
-
-cimi-editor-web/src/main/webapp/gulpfile.js.map
-
-cimi-editor-web/src/main/webapp/gulpfile.js
-
-cimi-editor-web/src/main/webapp/gulpfile.js
-
-cimi-editor-web/src/main/webapp/gulpfile.js.map

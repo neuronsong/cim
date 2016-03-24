@@ -7,7 +7,7 @@ import {CapitalizePipe} from "../../utilities/pipes/capitalize.pipe";
     selector: "model-detailer",
     directives: [FORM_DIRECTIVES],
     templateUrl: "./app/components/model-detailer/model-detailer.html",
-    styleUrls:  ["./app/utilities/forms.css", "./app/utilities/utility.css"],
+    styleUrls:  ["./app/utilities/forms.css"],
     providers: [FormBuilder],
     pipes: [CapitalizePipe]
 })
@@ -16,7 +16,7 @@ export class ModelDetailer {
 
     constructor(private _router: Router) {}
 
-    payload = null;
+    payload: Object;
     modelSimple = {
         name: "",
         binding: "",

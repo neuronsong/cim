@@ -19,7 +19,7 @@ export class ModelBuilder implements OnInit {
     submitted = false;
 
     // TODO: Insert mock data
-    elements = [];
+    elements: any[];
 
     constructor(private _stateService: StateService) { }
 

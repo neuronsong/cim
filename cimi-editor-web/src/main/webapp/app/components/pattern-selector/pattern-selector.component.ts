@@ -10,7 +10,7 @@ import {Router, RouteParams} from "angular2/router";
     providers: [FormBuilder, PatternSelectorService],
     pipes: [CapitalizePipe],
     templateUrl: "./app/components/pattern-selector/pattern-selector.component.html",
-    styleUrls:  ["./app/utilities/forms.css", "./app/utilities/utility.css"]
+    styleUrls:  ["./app/utilities/forms.css"]
 })
 export class PatternSelector implements OnInit {
 

@@ -1,5 +1,5 @@
 export interface State {
-    pattern: Object,
-    details: Object,
-    model: Object
+    // pattern: Object,
+    // details: Object,
+    // model: Object
 }

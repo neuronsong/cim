@@ -1,0 +1,2 @@
+# Just for our work, ignore Javascript (we generate from Typescript on the fly)
+*.js

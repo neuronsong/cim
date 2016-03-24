@@ -5,7 +5,7 @@ import {StateService} from "../../utilities/state.service";
 @Component({
     selector: "sidenav",
     templateUrl: "./app/components/sidenav/sidenav.component.html",
-    styleUrls:  ["./app/components/sidenav/sidenav.component.css", "./app/utilities/utility.css"],
+    styleUrls:  ["./app/components/sidenav/sidenav.component.css"],
     directives: [ROUTER_DIRECTIVES],
     providers: [StateService]
 })
@@ -19,7 +19,7 @@ export class SidenavComponent implements OnInit {
 
     constructor(private _location: Location, private _stateService: StateService) { }
 
-    isPageSelected(path) {
+    isPageSelected(path: string) {
         return this._location.path().indexOf(path) !== -1;
     }
 

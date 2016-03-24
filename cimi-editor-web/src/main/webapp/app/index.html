@@ -1,43 +1,51 @@
-<html>
-    <head>
-        <base href="/"/>
-        <title>CIMI Editor</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">    
-        <!-- 1. Load libraries -->   
-        
-        <!-- Compiled and minified CSS -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="//cdn.jsdelivr.net/flexboxgrid/6.3.0/flexboxgrid.min.css" type="text/css" >
-        
-        <!-- Compiled and minified JavaScript -->
-        <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>-->
-      
-        <!-- NOTE: Any non-CDN library you wish to add must be added to the gulpfile so it can be copied over to lib -->
-        <link rel="stylesheet" type="text/css" href="app/assets/styles/main.css">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description" content="CIMI Editor">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Disable tap highlight on IE -->
+	<meta name="msapplication-tap-highlight" content="no">
+	<title>CIMI Editor</title>
+	<!-- Add to homescreen -->
+	<link rel="manifest" href="manifest.json">
+	
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/flexboxgrid/6.3.0/flexboxgrid.min.css" type="text/css" >
 
-        <!-- IE required polyfills, in this exact order -->
-        <script src="lib/es6-shim.min.js"></script>
-        <script src="lib/system-polyfills.js"></script>
-        <script src="lib/angular2-polyfills.js"></script>
-        <script src="lib/system.src.js"></script>
-        <script src="lib/Rx.js"></script>
-        <script src="lib/angular2.dev.js"></script>
-        <script src="lib/router.dev.js"></script>
-        <!-- 2. Configure SystemJS -->
-        <script>
-            System.config({
-                packages: {        
-                    app: {
-                    format: 'register',
-                    defaultExtension: 'js'
-                    }
-                }
-            });
-            System.import('app/core/main').then(null, console.error.bind(console));
-        </script>
-    </head>
-    <!-- 3. Display the application -->
-    <body>
-        <cimi-editor>Loading...</cimi-editor>
-    </body>
+	<!-- Stylesheets -->
+	<!-- build:css-vendor -->
+	<link rel="stylesheet" href="styles/vendor.css">
+	<!-- endbuild -->
+	<!-- build:css-bundle -->
+	<link rel="stylesheet" href="styles/main.css">
+	<!-- endbuild -->
+
+	<base href="/">
+</head>
+<body class="full-height">
+	<app class="full-height">
+		Loading ...
+	</app>
+
+
+	<!-- Polyfills: must all be loaded before SystemJS -->	
+
+	<!-- ES6 Shim (ES2015 support) -->
+	<!-- inline node_modules/es6-shim/es6-shim.js -->
+	<script inline src="node_modules/es6-shim/es6-shim.js"></script>
+	<!-- inline node_modules/angular2/bundles/angular2-polyfills.js -->
+	<script inline src="node_modules/angular2/bundles/angular2-polyfills.js"></script>
+
+	<!-- build:js-app -->
+	<!-- for production, this is all replaced by a minified bundle -->
+	<script src="jspm_packages/system.src.js"></script>
+	<script src="jspm.conf.js"></script>
+	<script>
+		System.import('core/boot').catch(console.error.bind(console));
+	</script>
+	<!-- endbuild -->
+</body>
 </html>
