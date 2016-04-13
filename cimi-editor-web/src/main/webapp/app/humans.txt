@@ -3,11 +3,8 @@
 
 # TEAM
 
-  nobody -- Project Lead -- https://twitter.com/dsebastien
 
 # THANKS
-
-  Thanks for all the fish
 
 # TECHNOLOGY COLOPHON
 

@@ -1,7 +1,7 @@
 <div>
     <div class="headline">Pattern Selector</div>
-    <h4>Please select a clinical pattern</h4>
-    <a class="btn btn-push bg-yellow dark-gray m-r-10" *ngFor="#pattern of patterns"
+    <h4>Please select a clinical pattern: </h4>
+    <a class="btn btn-push bg-yellow dark-gray m-r-10 m-t-20" *ngFor="#pattern of patterns"
         [class.selected]="isSelected(pattern)"
         (click)="onSelect(pattern)">
         {{pattern.name}}

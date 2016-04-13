@@ -22,6 +22,7 @@ export class PatternSelector implements OnInit {
         private _service: PatternSelectorService,
         private _router: Router,
         routeParams: RouteParams) {
+            console.log("PatternSelector constructor called");
             this._selectedPattern = +routeParams.get("id");
     }
 
